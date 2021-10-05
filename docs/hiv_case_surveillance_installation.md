@@ -1,7 +1,5 @@
 # HIV Case Surveillance Installation Guide { #hiv_cs_installation }
 
-Last updated 29/09/2021
-
 Package Version b1.0.0
 
 DHIS2 Version compatibility 2.33.5 and above
