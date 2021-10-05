@@ -285,14 +285,69 @@ Each of these dashboards is described in the table below.
 
 ### 4.2. Dashboard Overview
 
-| Dashboard name, description, and data use questions |
-|---|
-| HIV CS - 1. Case Reporting & Demographics. Newly reported cases by month, geography, and key population group. Cumulative cases registered by age ranges, gender. How has registration of new HIV cases changed this year compared to last? Have most new HIV cases also initiated ART? Is the epidemic concentrated in a certain KP group or region? |
-| HIV CS - 2. ART Linkage & Retention Cumulative cases that initiate and continue ART on a routine basis. Examines patient status reported last month, and attrition or mortality over time. How has linkage to ART improved over time? Are there any hotspot districts or clinics where ART linkage is significantly lower? How many patients initiated ART on the same day of  their positive test result? How many within 14 days? What are the patterns of patients lost to follow up at visits last month by gender? By district? Has ART attrition generally increased in the last 6 months? |
-| HIV CS - 3. Viral Load Viral Load testing coverage and viral load suppression among all patients on ART more than 6 months. Are 95% of cases with have a viral load test in viral load suppression? Has that improved since last year? Of all cases that have been on ART for at least 6 months and are still active, how many have ever had a viral load test? Last month, how many cases that had their first visit after 6 months on ART also had a viral load test in the month? Does this vary by district? |
-| HIV CS - 4. TB Preventive Treatment TB Prevention Therapy (TPT) initiation and completion, cumulative by ange and gender, as well as TPT Regimens. What is the cascade of total HIV cases with TPT eligibility, initiation, and completion this year? Have completion rates for TPT increased over the past 12 months? Are eligible adults more likely to initiate TPT than eligible children? Are there patterns by gender? |
-| HIV CS - 5. Epidemic Status HIV Cascade with case surveillance data plus aggregate spectrum estimates as annual population-level denominators. Is my region reaching 95/95/95 targets? Are enough cases enrolled in the HIV CS Tracker to compare with the national spectrum estimate for total cases identified? How have cases with VL suppression increased this year compared to the end of last year? Over the preceding 6 months, how many PLHIV have initiated ART?  |
-| HIV CS - Facility Monitoring Encounter-based indicators specifically designed for monitoring HIV CS roll-out at facility level, including new cases on ART, testing site, and latest status not on ART. What was the most common age and gender combination for new cases last month? Have “lost-to-follow-up” reports increased or decreased over prior 12 months at my facility? What was the most frequent reason for patient visits over the last 3 months? Which patients had reportedly discontinued ART last month at my facility? |
+Dashboard name, description, and data use questions
+
+**HIV CS - 1. Case Reporting & Demographics**
+
+![Dashboard 1](resources/images/Dashboard1.png)
+
+Newly reported cases by month, geography, and key population group. Cumulative cases registered by age ranges, gender.
+- How has registration of new HIV cases changed this year compared to last?
+- Have most new HIV cases also initiated ART?
+- Is the epidemic concentrated in a certain KP group or region?
+
+
+
+** HIV CS - 2. ART Linkage & Retention **
+
+![Dashboard 2](resources/images/Dashboard2.png)
+
+Cumulative cases that initiate and continue ART on a routine basis. Examines patient status reported last month, and attrition or mortality over time.
+-  How has linkage to ART improved over time? Are there any hotspot districts or clinics where ART linkage is significantly lower?
+-  How many patients initiated ART on the same day of  their positive test result?
+-   How many within 14 days? 
+-   What are the patterns of patients lost to follow up at visits last month by gender? By district?
+-   Has ART attrition generally increased in the last 6 months? 
+
+** HIV CS - 3. Viral Load **
+
+![Dashboard 3](resources/images/Dashboard3.png)
+
+Viral Load testing coverage and viral load suppression among all patients on ART more than 6 months.
+- Are 95% of cases with have a viral load test in viral load suppression?
+- Has that improved since last year?
+- Of all cases that have been on ART for at least 6 months and are still active, how many have ever had a viral load test?
+- Last month, how many cases that had their first visit after 6 months on ART also had a viral load test in the month? Does this vary by district?
+
+** HIV CS - 4. TB Preventive Treatment **
+
+![Dashboard 4](resources/images/Dashboard4.png)
+
+TB Prevention Therapy (TPT) initiation and completion, cumulative by ange and gender, as well as TPT Regimens.
+- What is the cascade of total HIV cases with TPT eligibility, initiation, and completion this year? 
+- Have completion rates for TPT increased over the past 12 months? 
+- Are eligible adults more likely to initiate TPT than eligible children? 
+- Are there patterns by gender? 
+
+** HIV CS - 5. Epidemic Status**
+
+![Dashboard 5](resources/images/Dashboard5.png)
+
+HIV Cascade with case surveillance data plus aggregate spectrum estimates as annual population-level denominators.
+- Is my region reaching 95/95/95 targets?
+- Are enough cases enrolled in the HIV CS Tracker to compare with the national spectrum estimate for total cases identified?
+- How have cases with VL suppression increased this year compared to the end of last year?
+- Over the preceding 6 months, how many PLHIV have initiated ART?
+
+** HIV CS - Facility Monitoring **
+
+![Dashboard 6](resources/images/Dashboard6.png)
+
+Encounter-based indicators specifically designed for monitoring HIV CS roll-out at facility level, including new cases on ART, testing site, and latest status not on ART.
+-What was the most common age and gender combination for new cases last month?
+-Have “lost-to-follow-up” reports increased or decreased over prior 12 months at my facility?
+-What was the most frequent reason for patient visits over the last 3 months?
+-Which patients had reportedly discontinued ART last month at my facility? 
 
 ### 4.3. Indicators and Program Indicators
 
