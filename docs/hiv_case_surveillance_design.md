@@ -17,7 +17,7 @@ The program includes some basic level of decision support and prompts to aid tho
 
 ### 2.2. Workflow
 
-![Workflow](resources/images/Workflow.png)
+![Workflow](resources/images/workflow.png)
 
 ### 2.3. Programme Structure
 
@@ -142,7 +142,7 @@ The TPT section records the date when the person was deemed eligible for TB prev
 
 Once a patient has completed their treatment, the field “Restart TPT” will show up. Checking this box will allow you to delete the existing values and start a new round of TPT.
 
-![TB preventive therapy](resources/images/TPT.png)
+![TB preventive therapy](resources/images/tpt.png)
 
 Treatment:
 

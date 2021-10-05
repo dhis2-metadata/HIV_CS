@@ -337,7 +337,9 @@ After accessing the instance, we proceed to enroll a new case in the HIV CS prog
 Please note that the UID for this new TEI is qFdfVhUGFZ8.
 
 Checking the table enrollmentou, we can see that a new row has been created.
+
 ![Visit by Treatment Status and District](resources/images/image1.png)
+
 It is possible to create a SQL view to provide the contents of enrollmentou table in a more user friendly way, so the user can easily check what the enrollment ou was for each TEI in the program. The SQL view is as follows:
 
 ```SELECT tei.uid as tei_uid, eou.uid as enrollment_uid, ou.name as enrollment_ou
