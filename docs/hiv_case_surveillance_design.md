@@ -495,8 +495,8 @@ The package is natively compatible with the DHIS2 Data Capture app for android. 
 
 ### 6.1. Automatically Assigned UiDs
 
-If you will be using android devices, and you will be using automatically generated IDs which are sequential or based on dates, you need to be aware that in order to be able to work offline, android devices reserve sets of UiDs in bulk in advance. This means that the UiDs assigned may not necessarily correspond with the chronological order in which the patients are registered. For more information see [here](https://docs.dhis2.org/en/implement/android-implementation/dhis2-configuration-for-android.html#implementation_guide_dhis2_config_reserved_id):
+If you will be using android devices, and you will be using automatically generated IDs which are sequential or based on dates, you need to be aware that in order to be able to work offline, android devices reserve sets of UiDs in bulk in advance. This means that the UiDs assigned may not necessarily correspond with the chronological order in which the patients are registered. For more information see [here](https://docs.dhis2.org/en/implement/android-implementation/dhis2-configuration-for-android.html#implementation_guide_dhis2_config_reserved_id).
 
 ### 6.2 Search Functionality
 
-Note that for android-based implementations, if you want users to be able to search clients in a different org unit than their own, the search settings MUST be set to “open” as the other search features are not fully supported. More information available [here](https://docs.dhis2.org/en/full/implement/dhis2-android-configuration-guide.html):
+Note that for android-based implementations, if you want users to be able to search clients in a different org unit than their own, the search settings MUST be set to “open” as the other search features are not fully supported. More information available [here](https://docs.dhis2.org/en/full/implement/dhis2-android-configuration-guide.html).
