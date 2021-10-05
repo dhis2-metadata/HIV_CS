@@ -272,7 +272,7 @@ In order to allow for analytics at the point of service when clients change the 
 
 First step is to create a new table in the database where we will log the OU selected when the user enrolls in a new TEI. Please note that only programinstanceid and organisationunitid columns are required. In this case the uid column has been added for clarity purposes. We could add any column required for auditing purposes (for example a timestamp with the creation date, etc…)
 
-```
+```SQL
 CREATE TABLE public.enrollmentou (
     programinstanceid bigint NOT NULL,
     uid character varying(11),
@@ -294,12 +294,12 @@ ALTER TABLE ONLY public.enrollmentou
 
 ALTER TABLE ONLY public.enrollmentou
     ADD CONSTRAINT fk_enrollmentou_organisationunitid FOREIGN KEY (organisationunitid) REFERENCES public.organisationunit(organisationunitid);
-
 ```
 
 Then, we define a function to be executed by a trigger. This function simply takes the NEW value(s) INSERTED or UPDATED in table programinstance (corresponding to an enrollment) stored in variable NEW and populates enrollementou table with them. It also makes sure that the new enrollment corresponds to program uid 'Xh88p1nyefp', HIV CS.
 
-```CREATE OR REPLACE FUNCTION log_enrollment_ou_changes()
+```SQL
+@CREATE OR REPLACE FUNCTION log_enrollment_ou_changes()
   RETURNS TRIGGER 
   LANGUAGE PLPGSQL
   AS
@@ -319,7 +319,8 @@ $$;
 
 Last step remaining is to create a trigger which will execute this function after an insert or update operation takes place in the programinstance table.
 
-```CREATE TRIGGER enrollment_ou_changes
+```SQL
+CREATE TRIGGER enrollment_ou_changes
   AFTER INSERT OR UPDATE
   ON programinstance
   FOR EACH ROW
@@ -342,7 +343,8 @@ Checking the table enrollmentou, we can see that a new row has been created.
 
 It is possible to create a SQL view to provide the contents of enrollmentou table in a more user friendly way, so the user can easily check what the enrollment ou was for each TEI in the program. The SQL view is as follows:
 
-```SELECT tei.uid as tei_uid, eou.uid as enrollment_uid, ou.name as enrollment_ou
+```SQL
+SELECT tei.uid as tei_uid, eou.uid as enrollment_uid, ou.name as enrollment_ou
 FROM enrollmentou eou
 INNER JOIN programinstance pi ON eou.programinstanceid = pi.programinstanceid
 INNER JOIN trackedentityinstance tei ON pi.trackedentityinstanceid = tei.trackedentityinstanceid
@@ -365,7 +367,8 @@ Also in the UI:
 
 We create the following function and trigger on table trackedentityprogramowner:
 
-```CREATE OR REPLACE FUNCTION log_ownership_ou_changes()
+```SQL
+CREATE OR REPLACE FUNCTION log_ownership_ou_changes()
   RETURNS TRIGGER 
   LANGUAGE PLPGSQL
   AS
