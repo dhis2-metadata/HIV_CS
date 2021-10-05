@@ -298,7 +298,7 @@ Newly reported cases by month, geography, and key population group. Cumulative c
 
 
 
-** HIV CS - 2. ART Linkage & Retention **
+**HIV CS - 2. ART Linkage & Retention**
 
 ![Dashboard 2](resources/images/Dashboard2.png)
 
@@ -309,7 +309,7 @@ Cumulative cases that initiate and continue ART on a routine basis. Examines pat
 -   What are the patterns of patients lost to follow up at visits last month by gender? By district?
 -   Has ART attrition generally increased in the last 6 months? 
 
-** HIV CS - 3. Viral Load **
+**HIV CS - 3. Viral Load**
 
 ![Dashboard 3](resources/images/Dashboard3.png)
 
@@ -319,7 +319,7 @@ Viral Load testing coverage and viral load suppression among all patients on ART
 - Of all cases that have been on ART for at least 6 months and are still active, how many have ever had a viral load test?
 - Last month, how many cases that had their first visit after 6 months on ART also had a viral load test in the month? Does this vary by district?
 
-** HIV CS - 4. TB Preventive Treatment **
+**HIV CS - 4. TB Preventive Treatment**
 
 ![Dashboard 4](resources/images/Dashboard4.png)
 
@@ -329,7 +329,7 @@ TB Prevention Therapy (TPT) initiation and completion, cumulative by ange and ge
 - Are eligible adults more likely to initiate TPT than eligible children? 
 - Are there patterns by gender? 
 
-** HIV CS - 5. Epidemic Status**
+**HIV CS - 5. Epidemic Status**
 
 ![Dashboard 5](resources/images/Dashboard5.png)
 
@@ -339,7 +339,7 @@ HIV Cascade with case surveillance data plus aggregate spectrum estimates as ann
 - How have cases with VL suppression increased this year compared to the end of last year?
 - Over the preceding 6 months, how many PLHIV have initiated ART?
 
-** HIV CS - Facility Monitoring **
+**HIV CS - Facility Monitoring**
 
 ![Dashboard 6](resources/images/Dashboard6.png)
 
@@ -355,124 +355,124 @@ Included within the package there are 116 program indicators and XYZ indicators,
 
 Special attention should be made to program indicators marked “cumulative”, which identify all cases that meet the specified criteria before the end of a given period, regardless of when they enrolled in the system, and make use of open “analytic period boundaries”. Note that additional disaggregation of all program indicators can be configured for local context through consulting the DHIS2 User Guide. (<https://docs.dhis2.org/en/use/user-guides/dhis-core-version-236/analysing-data/data-visualizer.html>)
 
-| pi_name | pi_shortname | pi_desc | pi_expr | pi_filter | pi_agg | pi_type |
-|---|---|---|---|---|---|---|
-| HIV - Age 00-04 | PLHIV (0-4, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Age at enrollment. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})>=0 && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})<=4 | COUNT | ENROLLMENT |
-| HIV - Age 05-09 | PLHIV (5-9 Age, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})>=5 && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})<=9 | COUNT | ENROLLMENT |
-| HIV - Age 10-14 | PLHIV (10-14, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})>=10 && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})<=14 | COUNT | ENROLLMENT |
-| HIV - Age 15-19 | PLHIV (15-19 Age, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})>=15 && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})<=19 | COUNT | ENROLLMENT |
-| HIV - Age 20-24 | PLHIV (20-24 Age, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})>=20 && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})<=24 | COUNT | ENROLLMENT |
-| HIV - Age 25-49 | PLHIV (25-49 Age, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})>=25 && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})<=49 | COUNT | ENROLLMENT |
-| HIV - Age 50+ | PLHIV (50+ Age, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})>=50 | COUNT | ENROLLMENT |
-| HIV - Age at Diagnosis: 0_20 | HIV AGE AT DIAGNOSIS: 0_20 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=0 && #{K5ac7u3V5bB.zsM4K8kNPSo} <20 && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 0_20 & Gender: Female | HIV AGE AT DIAGNOSIS: 0_20 & GEN..._COMBO_4 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=0 && #{K5ac7u3V5bB.zsM4K8kNPSo} <20 && A{Jt68iauILtD} == 'FEMALE' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 0_20 & Gender: Male | HIV AGE AT DIAGNOSIS: 0_20 & GEN..._COMBO_5 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=0 && #{K5ac7u3V5bB.zsM4K8kNPSo} <20 && A{Jt68iauILtD} == 'MALE' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 0_20 & Gender: Other | HIV AGE AT DIAGNOSIS: 0_20 & GEN..._COMBO_6 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=0 && #{K5ac7u3V5bB.zsM4K8kNPSo} <20 && A{Jt68iauILtD} == 'OTHER' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 0_20 & Gender: Transgender | HIV AGE AT DIAGNOSIS: 0_20 & GEN..._COMBO_7 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=0 && #{K5ac7u3V5bB.zsM4K8kNPSo} <20 && A{Jt68iauILtD} == 'TG' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 20_40 | HIV AGE AT DIAGNOSIS: 20_40 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=20 && #{K5ac7u3V5bB.zsM4K8kNPSo} <40 && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 20_40 & Gender: Female | HIV AGE AT DIAGNOSIS: 20_40 & GE..._COMBO_10 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=20 && #{K5ac7u3V5bB.zsM4K8kNPSo} <40 && A{Jt68iauILtD} == 'FEMALE' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 20_40 & Gender: Male | HIV AGE AT DIAGNOSIS: 20_40 & GE..._COMBO_11 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=20 && #{K5ac7u3V5bB.zsM4K8kNPSo} <40 && A{Jt68iauILtD} == 'MALE' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 20_40 & Gender: Other | HIV AGE AT DIAGNOSIS: 20_40 & GE..._COMBO_12 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=20 && #{K5ac7u3V5bB.zsM4K8kNPSo} <40 && A{Jt68iauILtD} == 'OTHER' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 20_40 & Gender: Transgender | HIV AGE AT DIAGNOSIS: 20_40 & GE..._COMBO_13 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=20 && #{K5ac7u3V5bB.zsM4K8kNPSo} <40 && A{Jt68iauILtD} == 'TG' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 40_60 | HIV AGE AT DIAGNOSIS: 40_60 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=40 && #{K5ac7u3V5bB.zsM4K8kNPSo} <60 && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 40_60 & Gender: Female | HIV AGE AT DIAGNOSIS: 40_60 & GE..._COMBO_15 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=40 && #{K5ac7u3V5bB.zsM4K8kNPSo} <60 && A{Jt68iauILtD} == 'FEMALE' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 40_60 & Gender: Male | HIV AGE AT DIAGNOSIS: 40_60 & GE..._COMBO_16 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=40 && #{K5ac7u3V5bB.zsM4K8kNPSo} <60 && A{Jt68iauILtD} == 'MALE' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 40_60 & Gender: Other | HIV AGE AT DIAGNOSIS: 40_60 & GE..._COMBO_17 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=40 && #{K5ac7u3V5bB.zsM4K8kNPSo} <60 && A{Jt68iauILtD} == 'OTHER' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 40_60 & Gender: Transgender | HIV AGE AT DIAGNOSIS: 40_60 & GE..._COMBO_18 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=40 && #{K5ac7u3V5bB.zsM4K8kNPSo} <60 && A{Jt68iauILtD} == 'TG' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 60_80 | HIV AGE AT DIAGNOSIS: 60_80 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=60 && #{K5ac7u3V5bB.zsM4K8kNPSo} <80 && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 60_80 & Gender: Female | HIV AGE AT DIAGNOSIS: 60_80 & GE..._COMBO_19 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=60 && #{K5ac7u3V5bB.zsM4K8kNPSo} <80 && A{Jt68iauILtD} == 'FEMALE' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 60_80 & Gender: Male | HIV AGE AT DIAGNOSIS: 60_80 & GE..._COMBO_20 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=60 && #{K5ac7u3V5bB.zsM4K8kNPSo} <80 && A{Jt68iauILtD} == 'MALE' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 60_80 & Gender: Other | HIV AGE AT DIAGNOSIS: 60_80 & GE..._COMBO_21 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=60 && #{K5ac7u3V5bB.zsM4K8kNPSo} <80 && A{Jt68iauILtD} == 'OTHER' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age at Diagnosis: 60_80 & Gender: Transgender | HIV AGE AT DIAGNOSIS: 60_80 & GE..._COMBO_22 |  | V{event_count} | #{K5ac7u3V5bB.zsM4K8kNPSo} >=60 && #{K5ac7u3V5bB.zsM4K8kNPSo} <80 && A{Jt68iauILtD} == 'TG' && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | EVENT |
-| HIV - Age Unknown | PLHIV (Unknown Age, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && !d2:hasValue(A{NI0QRzJvQ0k}) | COUNT | ENROLLMENT |
-| HIV - Community Test: mobile testing | HIV Community Test: MOBILE TESTING ... |  | V{event_count} | #{K5ac7u3V5bB.Q4X7sPYqzNS} == 'MOBILE' | COUNT | EVENT |
-| HIV - Community Test: other community based testing | HIV Community Test: OTHER COMMUNITY... |  | V{event_count} | #{K5ac7u3V5bB.Q4X7sPYqzNS} == 'OTHERCOMMUNITY' | COUNT | EVENT |
-| HIV - Community Test: voluntary counselling and testing centres | HIV Community Test: VOLUNTARY COUNS... |  | V{event_count} | #{K5ac7u3V5bB.Q4X7sPYqzNS} == 'VOLUNTARYCTC' | COUNT | EVENT |
-| HIV - currently pregnant | HIV CURRENTLY PREGNANT |  | V{event_count} | #{ang4CLldbIu.DKk6bMlho01} == 1 | COUNT | EVENT |
-| HIV - Days Since Treatment Start | HIV Days Since Start |  | d2:daysBetween(#{ang4CLldbIu.Lv3c5VSA9t3},V{event_date}) | d2:hasValue(#{ang4CLldbIu.Lv3c5VSA9t3}) | CUSTOM | ENROLLMENT |
-| HIV - Facility Test: antenatal care clinic | HIV Facility Test: ANTENATAL CARE ... |  | V{event_count} | #{K5ac7u3V5bB.AX3jpeTGpqz} == 'ANTENATALCLINIC' | COUNT | EVENT |
-| HIV - Facility Test: family planning clinic | HIV Facility Test: FAMILY PLANNING... |  | V{event_count} | #{K5ac7u3V5bB.AX3jpeTGpqz} == 'FAMILYPLANNING' | COUNT | EVENT |
-| HIV - Facility Test: other facility-level testing | HIV Facility Test: OTHER FACILITY-... |  | V{event_count} | #{K5ac7u3V5bB.AX3jpeTGpqz} == 'OTHERFACILITY' | COUNT | EVENT |
-| HIV - Facility Test: provider-initiated tested in a clinic or emergency facility | HIV Facility Test: PROVIDER-INITIA... |  | V{event_count} | #{K5ac7u3V5bB.AX3jpeTGpqz} == 'PROVIDERINITIATED' | COUNT | EVENT |
-| HIV - Facility Test: tb clinic | HIV Facility Test: TB CLINIC |  | V{event_count} | #{K5ac7u3V5bB.AX3jpeTGpqz} == 'TBCLINIC' | COUNT | EVENT |
-| HIV - Facility Test: voluntary counselling and testing (within a health facility setting) | HIV Facility Test: VOLUNTARY COUNS... |  | V{event_count} | #{K5ac7u3V5bB.AX3jpeTGpqz} == 'VOLUNTARYCOUNSELLING' | COUNT | EVENT |
-| HIV - Gender Female | PLHIV (Female, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && A{Jt68iauILtD}=="FEMALE" && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | ENROLLMENT |
-| HIV - Gender Male | PLHIV (Male, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && A{Jt68iauILtD}=="MALE" && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | ENROLLMENT |
-| HIV - Gender Missing | PLHIV (NA Gender, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && !d2:hasValue(A{Jt68iauILtD}) && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | ENROLLMENT |
-| HIV - Gender Transgender | PLHIV (TG, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && A{Jt68iauILtD}=="TG" && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | ENROLLMENT |
-| HIV - Initiated on ART 1-14 days after test | HIV initiated on ART 1-14 days after test | How many people have started their treatment within 14 days of enrollment | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.Lv3c5VSA9t3}) && d2:daysBetween(#{K5ac7u3V5bB.fxXDe8OZ86q},#{ang4CLldbIu.Lv3c5VSA9t3}) <= 14 && d2:daysBetween(#{K5ac7u3V5bB.fxXDe8OZ86q},#{ang4CLldbIu.Lv3c5VSA9t3}) >= 1 | COUNT | ENROLLMENT |
-| HIV - Initiated on ART 15+ days after test | HIV initiated on ART 15+ days after test | How many people have started their treatment within 14 days of enrollment | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.Lv3c5VSA9t3}) && d2:daysBetween(#{ang4CLldbIu.Lv3c5VSA9t3},#{K5ac7u3V5bB.fxXDe8OZ86q}) >= 15 | COUNT | ENROLLMENT |
-| HIV - Initiated on ART and Died, Cumulative | HIV patient death under treatment | Patients being surveilled who died whilst under surveillance | V{enrollment_count} | (#{ang4CLldbIu.rcUsYgOnlyF}== 'Dead' \|\| #{ang4CLldbIu.rcUsYgOnlyF} == 'DEAD') && d2:hasValue(#{ang4CLldbIu.c82CE0oy0Nj}) | COUNT | ENROLLMENT |
-| HIV - Initiated on ART and Lost to Follow Up, Cumulative | HIV patient LTFU under treatment | Patients being surveilled who are last reported as "lost to follow up" while being treated | V{enrollment_count} | (#{ang4CLldbIu.rcUsYgOnlyF}== 'Lost to follow up' \|\| #{ang4CLldbIu.rcUsYgOnlyF} == 'LTFU') && d2:hasValue(#{ang4CLldbIu.c82CE0oy0Nj}) | COUNT | ENROLLMENT |
-| HIV - Initiated on ART and Transfer Out, Cumulative | HIV patient transferred out under treatment | Patients being surveilled who are last reported as "transferred out" while being treated | V{enrollment_count} | (#{ang4CLldbIu.rcUsYgOnlyF}== 'Transferred out' \|\| #{ang4CLldbIu.rcUsYgOnlyF} == 'TRANSFEROUT') && d2:hasValue(#{ang4CLldbIu.c82CE0oy0Nj}) | COUNT | ENROLLMENT |
-| HIV - Initiated on ART, Cumulative | HIV patients ever under treatment | Patients being surveilled, including those that were died, transferred out, or lost to follow up | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.c82CE0oy0Nj}) | COUNT | ENROLLMENT |
-| HIV - Initiated on ART same day as test | HIV Initiated on ART same day as test | HIV Initiated on treatment same day as positive test | V{enrollment_count} |  d2:daysBetween(#{K5ac7u3V5bB.fxXDe8OZ86q},#{ang4CLldbIu.Lv3c5VSA9t3}) == 0 | COUNT | ENROLLMENT |
-| HIV - Initiated on ART within this period | HIV initiated on ART this period |  | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.Lv3c5VSA9t3}) | COUNT | ENROLLMENT |
-| HIV - Key Pop: Any Group | HIV KEY POPULATION: Any |  | V{event_count} | #{K5ac7u3V5bB.oc3LGLXvR5V} == 1 | COUNT | EVENT |
-| HIV - Key Pop: Injection Drug Use | HIV Key Pop: Injection Drug Use |  | V{event_count} | #{K5ac7u3V5bB.OGGCNyv1f2T} == 1 | COUNT | EVENT |
-| HIV - Key Pop: More than one group | HIV Key Pop: More than 1 group |  | V{event_count} | (#{K5ac7u3V5bB.HoxAE6Cv1IV} + #{K5ac7u3V5bB.kgJbXCGRSeM} + #{K5ac7u3V5bB.OGGCNyv1f2T} + #{K5ac7u3V5bB.XzFZQwgWyia} + #{K5ac7u3V5bB.OpTMybEaYLS}) >= 2 | COUNT | EVENT |
-| HIV - Key Pop: MSM | HIV Key Pop: MSM |  | V{event_count} | #{K5ac7u3V5bB.kgJbXCGRSeM} == 1 | COUNT | EVENT |
-| HIV - Key Pop: Prisoner | HIV Key Pop: Prisoner |  | V{event_count} | #{K5ac7u3V5bB.XzFZQwgWyia} == 1 | COUNT | EVENT |
-| HIV - Key Pop: Sex Worker | HIV Key Pop: Sex Worker |  | V{event_count} | #{K5ac7u3V5bB.OpTMybEaYLS} == 1 | COUNT | EVENT |
-| HIV - Key Pop: Transgender | HIV Key Pop: Transgender |  | V{event_count} | #{K5ac7u3V5bB.HoxAE6Cv1IV} == 1 | COUNT | EVENT |
-| HIV - New Case | HIV New Case |  | V{tei_count} | V{program_stage_id}=='K5ac7u3V5bB' | COUNT | EVENT |
-| HIV - New Case on ART | HIV New Case on ART |  | V{tei_count} | d2:hasValue(#{ang4CLldbIu.Lv3c5VSA9t3}) | COUNT | EVENT |
-| HIV - New Cases, Female | HIV_NEW_CASE GENDER: FEMALE |  | V{event_count} | A{Jt68iauILtD} == 'FEMALE' && d2:daysBetween(#{K5ac7u3V5bB.fxXDe8OZ86q}, V{analytics_period_end}) >= 0 && d2:daysBetween(V{analytics_period_start}, #{K5ac7u3V5bB.fxXDe8OZ86q}) >= 0 | COUNT | EVENT |
-| HIV - New cases, Male | HIV NEW CASE GENDER: MALE |  | V{event_count} | A{Jt68iauILtD} == 'MALE' && d2:daysBetween(#{K5ac7u3V5bB.fxXDe8OZ86q}, V{analytics_period_end}) >= 0 && d2:daysBetween( V{analytics_period_start}, #{K5ac7u3V5bB.fxXDe8OZ86q}) >= 0 | COUNT | EVENT |
-| HIV - New cases, Other gender | HIV NEW CASE GENDER: OTHER |  | V{event_count} | A{Jt68iauILtD} == 'OTHER' && d2:daysBetween(#{K5ac7u3V5bB.fxXDe8OZ86q}, V{analytics_period_end}) >= 0 && d2:daysBetween( V{analytics_period_start}, #{K5ac7u3V5bB.fxXDe8OZ86q}) >= 0 | COUNT | EVENT |
-| HIV - New cases, Transgender | HIV NEW CASE GENDER: TRANSGENDER |  | V{event_count} | A{Jt68iauILtD} == 'TG' && d2:daysBetween(#{K5ac7u3V5bB.fxXDe8OZ86q}, V{analytics_period_end}) >= 0 && d2:daysBetween( V{analytics_period_start}, #{K5ac7u3V5bB.fxXDe8OZ86q}) >= 0 | COUNT | EVENT |
-| HIV - People Living with HIV (New) | PLHIV (New) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. By NEW CASE REPORT date. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | ENROLLMENT |
-| HIV - People Living with HIV (Total) | PLHIV (Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 | COUNT | ENROLLMENT |
-| HIV - PLHIV Discontinued ART, Cumulative, By Facility of Visit | PLHIV_on_ART_DISCONTINUED_VISIT_CUMU | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. ART start date must be before start of reporting period. Counting all patients who discontinued ART at facility before end of period. This method double counts patient-OU pairings, not unique patients, and should be interpreted with caution. | V{tei_count} | #{ang4CLldbIu.rcUsYgOnlyF}=='DEAD' \|\| #{ang4CLldbIu.rcUsYgOnlyF}=='TREATMENTSTOPPED' \|\| #{ang4CLldbIu.rcUsYgOnlyF}=='LTFU' | COUNT | EVENT |
-| HIV - PLHIV, Discontinued ART within Period, By Facility of Registration | PLHIV on ART (Total, including dropouts) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. ART start date must be before start of reporting period. | V{enrollment_count} | (d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED')> 0 \|\| d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TREATMENTSTOPPED')> 0 \|\| d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DEAD') > 0 \|\| d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'LTFU')> 0) | COUNT | ENROLLMENT |
-| HIV - PLHIV on ART 6 months (New visit this period) | PLHIV, viral load eligible (Visited) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before the latest event. Must have had a visit within the period | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:monthsBetween(#{K5ac7u3V5bB.fxXDe8OZ86q}, PS_EVENTDATE:ang4CLldbIu) >= 6 && d2:daysBetween(V{analytics_period_start},PS_EVENTDATE:ang4CLldbIu)>=0 && d2:daysBetween(PS_EVENTDATE:ang4CLldbIu, V{analytics_period_end})>=0 | COUNT | ENROLLMENT |
-| HIV - PLHIV on ART 6 months this period | PLHIV, viral load newly eligible this period | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before point within the period, "crossing" the eligibility window. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:daysBetween(#{K5ac7u3V5bB.fxXDe8OZ86q}, V{analytics_period_start}) <= 180 && d2:daysBetween(#{K5ac7u3V5bB.fxXDe8OZ86q}, V{analytics_period_end}) >= 180 | COUNT | ENROLLMENT |
-| HIV - PLHIV on ART 6 months this period and received VL results | PLHIV, new viral load with results | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before point within the period, "crossing" the eligibility window. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:daysBetween(#{K5ac7u3V5bB.fxXDe8OZ86q}, V{analytics_period_start}) <= 180 && d2:daysBetween(#{K5ac7u3V5bB.fxXDe8OZ86q}, V{analytics_period_end}) >= 180 && d2:hasValue(#{ang4CLldbIu.EZAZ8aIV3kB}) | COUNT | ENROLLMENT |
-| HIV - PLHIV on ART 6 months (Total) | PLHIV, viral load eligible (total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before the latest event. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:monthsBetween(#{K5ac7u3V5bB.fxXDe8OZ86q}, PS_EVENTDATE:ang4CLldbIu) >= 6 | COUNT | ENROLLMENT |
-| HIV - PLHIV on ART (New on ART this period) | PLHIV on ART (New) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:hasValue(#{ang4CLldbIu.Lv3c5VSA9t3}) && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | ENROLLMENT |
-| HIV - PLHIV on ART Prior To Period, By Facility of Registration | HIV PLHIV on ART (Total, Prior to Period) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Examining BEFORE THIS PERIOD to compare with current period and examine attrition. ART start date must be before start of reporting period. | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.Lv3c5VSA9t3}) && #{ang4CLldbIu.rcUsYgOnlyF}!='TREATMENTSTOPPED' && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DEAD') == 0 && #{ang4CLldbIu.rcUsYgOnlyF}!='LTFU' | COUNT | ENROLLMENT |
-| HIV - PLHIV on ART Prior to Period, By Facility of Visit | PLHIV on ART_PRIOR_VISIT | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Examining BEFORE THIS PERIOD to compare with current period and examine attrition. ART start date must be before start of reporting period. This method double counts patient-OU pairings, not unique patients, and should be interpreted with caution. | V{tei_count} | #{ang4CLldbIu.rcUsYgOnlyF}!='DEAD' && #{ang4CLldbIu.rcUsYgOnlyF}!='TREATMENTSTOPPED' && #{ang4CLldbIu.rcUsYgOnlyF}!='LTFU' | COUNT | EVENT |
-| HIV - PLHIV on ART (Total) | PLHIV on ART (Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:hasValue(#{ang4CLldbIu.Lv3c5VSA9t3}) | COUNT | ENROLLMENT |
-| HIV - PLHIV who have viral load results (New VL result this period) | PLHIV with viral load results (new) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before the latest event. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:hasValue(#{ang4CLldbIu.v4K5u8wftrq}) && d2:monthsBetween(#{K5ac7u3V5bB.fxXDe8OZ86q}, PS_EVENTDATE:ang4CLldbIu) >= 6 && d2:daysBetween(V{analytics_period_start},#{ang4CLldbIu.v4K5u8wftrq})>=0 && d2:daysBetween(#{ang4CLldbIu.v4K5u8wftrq}, V{analytics_period_end})>=0 | COUNT | ENROLLMENT |
-| HIV - PLHIV who have viral load results (Total) | PLHIV with viral load results | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before the latest event. | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:hasValue(#{ang4CLldbIu.v4K5u8wftrq}) && d2:monthsBetween(#{K5ac7u3V5bB.fxXDe8OZ86q}, PS_EVENTDATE:ang4CLldbIu) >= 6 | COUNT | ENROLLMENT |
-| HIV - PLHIV who have viral load suppression (New VL result this period) | PLHIV with viral load suppression, new | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before the latest event. VL < 1000 | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:hasValue(#{ang4CLldbIu.v4K5u8wftrq}) && d2:monthsBetween(#{K5ac7u3V5bB.fxXDe8OZ86q}, PS_EVENTDATE:ang4CLldbIu) >= 6 && #{ang4CLldbIu.S4IJiirQVHY}==1 && d2:daysBetween(V{analytics_period_start},#{ang4CLldbIu.v4K5u8wftrq})>=0 && d2:daysBetween(#{ang4CLldbIu.v4K5u8wftrq}, V{analytics_period_end})>=0 | COUNT | ENROLLMENT |
-| HIV - PLHIV who have viral load suppression (Total) | PLHIV with viral load suppression | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before the latest event. VL < 1000 | V{enrollment_count} | d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'TRANSFEROUT') == 0 && d2:countIfValue(#{ang4CLldbIu.rcUsYgOnlyF},'DIED') == 0 && d2:hasValue(#{ang4CLldbIu.v4K5u8wftrq}) && d2:monthsBetween(#{K5ac7u3V5bB.fxXDe8OZ86q}, PS_EVENTDATE:ang4CLldbIu) >= 6 && #{ang4CLldbIu.S4IJiirQVHY}==1 | COUNT | ENROLLMENT |
-| HIV - PLHIV with more than 28 days since the end of last prescription period | HIV No medicine 28 days or more |  | V{enrollment_count} | d2:daysBetween(#{ang4CLldbIu.EGjmPoKhHpM},V{analytics_period_start}) >= 28 | COUNT | ENROLLMENT |
-| HIV - Reason for Visit: antiretroviral drug pick up | HIV REASON FOR VISIT: ANTIRETROVIRAL DRUG ... |  | V{event_count} | #{ang4CLldbIu.ApNE5GlYotZ} == 'ARV_PICKUP' | COUNT | EVENT |
-| HIV - Reason for Visit: clinical visit | HIV REASON FOR VISIT: CLINICAL VISIT |  | V{event_count} | #{ang4CLldbIu.ApNE5GlYotZ} == 'CLINICAL_VISIT' | COUNT | EVENT |
-| HIV - Reason for Visit: issues and concerns | HIV REASON FOR VISIT: ISSUES AND CONCERNS |  | V{event_count} | #{ang4CLldbIu.ApNE5GlYotZ} == 'ISSUES' | COUNT | EVENT |
-| HIV - Reported Death | HIV patient death | Patients being surveilled who died whilst under surveillance | V{event_count} | #{ang4CLldbIu.rcUsYgOnlyF}== 'Dead' \|\|#{ang4CLldbIu.rcUsYgOnlyF} == 'DEAD' | COUNT | EVENT |
-| HIV - Reported Lost To Follow Up | HIV patient LTFU | Patients being surveilled who are lost to follow up whilst under surveillance | V{event_count} | #{ang4CLldbIu.rcUsYgOnlyF} == 'Lost to follow-up' \|\|#{ang4CLldbIu.rcUsYgOnlyF} == 'LTFU' | COUNT | EVENT |
-| HIV - Reported Move To Different Location | HIV patient transferred | Patients being surveilled who arre reported transferred out or "moved to a different location" | V{event_count} | #{ang4CLldbIu.rcUsYgOnlyF}== 'Transfer-out' \|\|#{ang4CLldbIu.rcUsYgOnlyF} == 'TRANSFEROUT' | COUNT | EVENT |
-| HIV - Reported Stopped Treatment | HIV patient stopped treatment | Patients who are reported stopped treatment | V{event_count} | #{ang4CLldbIu.rcUsYgOnlyF}== 'Stopped Treatment' \|\|#{ang4CLldbIu.rcUsYgOnlyF} == 'TREATMENTSTOPPED' | COUNT | EVENT |
-| HIV - Tested positive within period | HIV Tested positive |  | V{enrollment_count} | d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | ENROLLMENT |
-| HIV - Tested positive within period & Initiated on ART | HIV, , tested positive, initiated on ART |  | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.Lv3c5VSA9t3}) && d2:hasValue(#{K5ac7u3V5bB.fxXDe8OZ86q}) | COUNT | ENROLLMENT |
-| HIV - TPT Completed, cumulative | HIV TPT Completed, cumulative |  | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.Lu4jo7fSTb3}) && d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) && d2:hasValue(#{ang4CLldbIu.TQtuEvZ1eF6}) | COUNT | ENROLLMENT |
-| HIV - TPT Completed this period | HIV TPT Completed this period |  | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.Lu4jo7fSTb3}) && d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) && d2:hasValue(#{ang4CLldbIu.TQtuEvZ1eF6}) | COUNT | ENROLLMENT |
-| HIV - TPT Eligible, cumulative | HIV TPT Eligible, cumulative |  | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) | COUNT | ENROLLMENT |
-| HIV - TPT Eligible, cumulative (Adult, age 15+) | HIV TPT Eligible, cumulative, 15+ | Age is as of the date eligible for TPT | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) && d2:yearsBetween(A{NI0QRzJvQ0k}, #{ang4CLldbIu.TmAJxu1XNKh}) >= 15 | COUNT | ENROLLMENT |
-| HIV - TPT Eligible, cumulative (Male) | HIV TPT Eligible, cumulative, male |  | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) && A{Jt68iauILtD}=="MALE" | COUNT | ENROLLMENT |
-| HIV - TPT Eligible, cumulative (Pediatric, age 0-14) | HIV TPT Eligible, cumulative, 0-14 | Age is as of the date eligible for TPT | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) && d2:yearsBetween(A{NI0QRzJvQ0k}, #{ang4CLldbIu.TmAJxu1XNKh}) <= 14 | COUNT | ENROLLMENT |
-| HIV - TPT Eligible, cumulative (Transgender) | HIV TPT Eligible, cumulative, transgender |  | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) && A{Jt68iauILtD}=="TG" | COUNT | ENROLLMENT |
-| HIV - TPT Eligible this period | HIV TPT Eligible this period |  | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) | COUNT | ENROLLMENT |
-| HIV - TPT Initiated, cumulative | HIV TPT Initiated, cumulative |  | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.Lu4jo7fSTb3}) && d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) | COUNT | ENROLLMENT |
-| HIV - TPT Initiated, cumulative (Adult, age 15+) | HIV TPT Initiated, cumulative, 15+ | Age is as of TPT eligible date | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.Lu4jo7fSTb3}) && d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) && d2:yearsBetween(A{NI0QRzJvQ0k}, #{ang4CLldbIu.TmAJxu1XNKh}) >= 15 | COUNT | ENROLLMENT |
-| HIV - TPT Initiated, cumulative (Female) | HIV TPT Initiated, cumulative, female |  | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.Lu4jo7fSTb3}) && d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) && A{Jt68iauILtD}=="FEMALE" | COUNT | ENROLLMENT |
-| HIV - TPT Initiated, cumulative (Male) | HIV TPT Initiated, cumulative, male |  | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.Lu4jo7fSTb3}) && d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) && A{Jt68iauILtD}=="MALE" | COUNT | ENROLLMENT |
-| HIV - TPT Initiated, cumulative (Pediatric, age 0-14) | HIV TPT Initiated, cumulative, 0-14 | Age is as of TPT eligible date | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.Lu4jo7fSTb3}) && d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) && d2:yearsBetween(A{NI0QRzJvQ0k}, #{ang4CLldbIu.TmAJxu1XNKh}) <= 14 | COUNT | ENROLLMENT |
-| HIV - TPT Initiated, cumulative (Transgender) | HIV TPT Initiated, cumulative, transgender |  | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.Lu4jo7fSTb3}) && d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) && A{Jt68iauILtD}=="TG" | COUNT | ENROLLMENT |
-| HIV - TPT Initiated this period | HIV TPT Initiated this period |  | V{enrollment_count} | d2:hasValue(#{ang4CLldbIu.Lu4jo7fSTb3}) && d2:hasValue(#{ang4CLldbIu.TmAJxu1XNKh}) | COUNT | ENROLLMENT |
-| HIV - Treatment Status: Changed | HIV - TREATMENT STATUS: CHANGED |  | V{event_count} | d2:hasValue(#{ang4CLldbIu.lRgSVYXi32H}) && d2:daysBetween(#{ang4CLldbIu.lRgSVYXi32H},V{enrollment_date})>=0 | AVERAGE | EVENT |
-| HIV - Treatment Status: death (documented) | HIV TREATMENT STATUS: DEATH (DOCUMENTED) |  | V{event_count} | #{ang4CLldbIu.rcUsYgOnlyF} == 'DEAD' | COUNT | EVENT |
-| HIV - Treatment Status: lost to follow up | HIV TREATMENT STATUS: LOST TO FOLLOW UP |  | V{event_count} | #{ang4CLldbIu.rcUsYgOnlyF} == 'LTFU' | COUNT | EVENT |
-| HIV - Treatment Status: on art | HIV TREATMENT STATUS: ON ART |  | V{event_count} | #{ang4CLldbIu.rcUsYgOnlyF} == 'RETAINED' | COUNT | EVENT |
-| HIV - Treatment Status: refused (stopped) treatment | HIV TREATMENT STATUS: REFUSED (STOPPED) TR... |  | V{event_count} | #{ang4CLldbIu.rcUsYgOnlyF} == 'TREATMENTSTOPPED' | COUNT | EVENT |
-| HIV - Treatment Status: transferred out | HIV TREATMENT STATUS: TRANSFERRED OUT |  | V{event_count} | #{ang4CLldbIu.rcUsYgOnlyF} == 'TRANSFEROUT' | COUNT | EVENT |
-| HIV - Vertical Transmission | HIV VERTICAL TRANSMISSION |  | V{event_count} | #{K5ac7u3V5bB.wslSIEQi8ab} == 1 | COUNT | EVENT |
-| HIV - Visits (Events) | HIV Visit Events |  | V{event_count} | V{program_stage_id}=='ang4CLldbIu' | COUNT | EVENT |
-| HIV - Visits (Unique PLHIV) | HIV visit persons |  | V{tei_count} | V{program_stage_id}=='ang4CLldbIu' | COUNT | EVENT |
-| HIV - VL Test Annual Denominator | HIV VL Test ANNUAL Denom | Only for annual level. If the current year, includes those who tested positive in first half. If last year, includes all who tested positive. | V{enrollment_count} | d2:monthsBetween(V{analytics_period_start}, V{analytics_period_end})>=11 && ((d2:monthsBetween(V{analytics_period_start}, V{current_date}) >= 6 && d2:monthsBetween(#{ang4CLldbIu.Lv3c5VSA9t3}, V{current_date}) >= 6 ) \|\| (d2:daysBetween(V{analytics_period_start}, V{current_date}) >= 1 && d2:daysBetween(#{ang4CLldbIu.Lv3c5VSA9t3}, V{analytics_period_start}) >=1)) | COUNT | ENROLLMENT |
-| HIV - VL Test Annual Numerator | VL Test ANNUAL Num | Only for annual level. If reporting period is this year, and in second half of year, include from first half of the year. If reporting period is this year and in first half, no one positive this year is eligible. If last year, all positive cases from that year are eligible for test this year. | V{enrollment_count} | ((d2:monthsBetween(V{analytics_period_start}, V{current_date}) >= 6 && d2:monthsBetween(#{ang4CLldbIu.Lv3c5VSA9t3}, V{current_date}) >= 6 ) \|\| (d2:daysBetween(V{analytics_period_start}, V{current_date}) >= 1 && d2:daysBetween(#{ang4CLldbIu.Lv3c5VSA9t3}, V{analytics_period_start}) >=1)) && d2:daysBetween(#{ang4CLldbIu.v4K5u8wftrq}, V{analytics_period_end})>=1 && d2:monthsBetween(V{analytics_period_start}, V{analytics_period_end})>=11 | COUNT | ENROLLMENT |
+| pi_name | pi_shortname | pi_desc | pi_type |
+|:---:|:---:|:---:|:---:|
+| HIV - Age 00-04 | PLHIV (0-4, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Age at enrollment. | ENROLLMENT |
+| HIV - Age 05-09 | PLHIV (5-9 Age, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | ENROLLMENT |
+| HIV - Age 10-14 | PLHIV (10-14, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | ENROLLMENT |
+| HIV - Age 15-19 | PLHIV (15-19 Age, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | ENROLLMENT |
+| HIV - Age 20-24 | PLHIV (20-24 Age, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | ENROLLMENT |
+| HIV - Age 25-49 | PLHIV (25-49 Age, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | ENROLLMENT |
+| HIV - Age 50+ | PLHIV (50+ Age, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | ENROLLMENT |
+| HIV - Age at Diagnosis: 0_20 | HIV AGE AT DIAGNOSIS: 0_20 |  | EVENT |
+| HIV - Age at Diagnosis: 0_20 & Gender: Female | HIV AGE AT DIAGNOSIS: 0_20 & GEN..._COMBO_4 |  | EVENT |
+| HIV - Age at Diagnosis: 0_20 & Gender: Male | HIV AGE AT DIAGNOSIS: 0_20 & GEN..._COMBO_5 |  | EVENT |
+| HIV - Age at Diagnosis: 0_20 & Gender: Other | HIV AGE AT DIAGNOSIS: 0_20 & GEN..._COMBO_6 |  | EVENT |
+| HIV - Age at Diagnosis: 0_20 & Gender: Transgender | HIV AGE AT DIAGNOSIS: 0_20 & GEN..._COMBO_7 |  | EVENT |
+| HIV - Age at Diagnosis: 20_40 | HIV AGE AT DIAGNOSIS: 20_40 |  | EVENT |
+| HIV - Age at Diagnosis: 20_40 & Gender: Female | HIV AGE AT DIAGNOSIS: 20_40 & GE..._COMBO_10 |  | EVENT |
+| HIV - Age at Diagnosis: 20_40 & Gender: Male | HIV AGE AT DIAGNOSIS: 20_40 & GE..._COMBO_11 |  | EVENT |
+| HIV - Age at Diagnosis: 20_40 & Gender: Other | HIV AGE AT DIAGNOSIS: 20_40 & GE..._COMBO_12 |  | EVENT |
+| HIV - Age at Diagnosis: 20_40 & Gender: Transgender | HIV AGE AT DIAGNOSIS: 20_40 & GE..._COMBO_13 |  | EVENT |
+| HIV - Age at Diagnosis: 40_60 | HIV AGE AT DIAGNOSIS: 40_60 |  | EVENT |
+| HIV - Age at Diagnosis: 40_60 & Gender: Female | HIV AGE AT DIAGNOSIS: 40_60 & GE..._COMBO_15 |  | EVENT |
+| HIV - Age at Diagnosis: 40_60 & Gender: Male | HIV AGE AT DIAGNOSIS: 40_60 & GE..._COMBO_16 |  | EVENT |
+| HIV - Age at Diagnosis: 40_60 & Gender: Other | HIV AGE AT DIAGNOSIS: 40_60 & GE..._COMBO_17 |  | EVENT |
+| HIV - Age at Diagnosis: 40_60 & Gender: Transgender | HIV AGE AT DIAGNOSIS: 40_60 & GE..._COMBO_18 |  | EVENT |
+| HIV - Age at Diagnosis: 60_80 | HIV AGE AT DIAGNOSIS: 60_80 |  | EVENT |
+| HIV - Age at Diagnosis: 60_80 & Gender: Female | HIV AGE AT DIAGNOSIS: 60_80 & GE..._COMBO_19 |  | EVENT |
+| HIV - Age at Diagnosis: 60_80 & Gender: Male | HIV AGE AT DIAGNOSIS: 60_80 & GE..._COMBO_20 |  | EVENT |
+| HIV - Age at Diagnosis: 60_80 & Gender: Other | HIV AGE AT DIAGNOSIS: 60_80 & GE..._COMBO_21 |  | EVENT |
+| HIV - Age at Diagnosis: 60_80 & Gender: Transgender | HIV AGE AT DIAGNOSIS: 60_80 & GE..._COMBO_22 |  | EVENT |
+| HIV - Age Unknown | PLHIV (Unknown Age, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | ENROLLMENT |
+| HIV - Community Test: mobile testing | HIV Community Test: MOBILE TESTING ... |  | EVENT |
+| HIV - Community Test: other community based testing | HIV Community Test: OTHER COMMUNITY... |  | EVENT |
+| HIV - Community Test: voluntary counselling and testing centres | HIV Community Test: VOLUNTARY COUNS... |  | EVENT |
+| HIV - currently pregnant | HIV CURRENTLY PREGNANT |  | EVENT |
+| HIV - Days Since Treatment Start | HIV Days Since Start |  | ENROLLMENT |
+| HIV - Facility Test: antenatal care clinic | HIV Facility Test: ANTENATAL CARE ... |  | EVENT |
+| HIV - Facility Test: family planning clinic | HIV Facility Test: FAMILY PLANNING... |  | EVENT |
+| HIV - Facility Test: other facility-level testing | HIV Facility Test: OTHER FACILITY-... |  | EVENT |
+| HIV - Facility Test: provider-initiated tested in a clinic or emergency facility | HIV Facility Test: PROVIDER-INITIA... |  | EVENT |
+| HIV - Facility Test: tb clinic | HIV Facility Test: TB CLINIC |  | EVENT |
+| HIV - Facility Test: voluntary counselling and testing (within a health facility setting) | HIV Facility Test: VOLUNTARY COUNS... |  | EVENT |
+| HIV - Gender Female | PLHIV (Female, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | ENROLLMENT |
+| HIV - Gender Male | PLHIV (Male, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | ENROLLMENT |
+| HIV - Gender Missing | PLHIV (NA Gender, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | ENROLLMENT |
+| HIV - Gender Transgender | PLHIV (TG, Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. | ENROLLMENT |
+| HIV - Initiated on ART 1-14 days after test | HIV initiated on ART 1-14 days after test | How many people have started their treatment within 14 days of enrollment | ENROLLMENT |
+| HIV - Initiated on ART 15+ days after test | HIV initiated on ART 15+ days after test | How many people have started their treatment within 14 days of enrollment | ENROLLMENT |
+| HIV - Initiated on ART and Died, Cumulative | HIV patient death under treatment | Patients being surveilled who died whilst under surveillance | ENROLLMENT |
+| HIV - Initiated on ART and Lost to Follow Up, Cumulative | HIV patient LTFU under treatment | Patients being surveilled who are last reported as "lost to follow up" while being treated | ENROLLMENT |
+| HIV - Initiated on ART and Transfer Out, Cumulative | HIV patient transferred out under treatment | Patients being surveilled who are last reported as "transferred out" while being treated | ENROLLMENT |
+| HIV - Initiated on ART, Cumulative | HIV patients ever under treatment | Patients being surveilled, including those that were died, transferred out, or lost to follow up | ENROLLMENT |
+| HIV - Initiated on ART same day as test | HIV Initiated on ART same day as test | HIV Initiated on treatment same day as positive test | ENROLLMENT |
+| HIV - Initiated on ART within this period | HIV initiated on ART this period |  | ENROLLMENT |
+| HIV - Key Pop: Any Group | HIV KEY POPULATION: Any |  | EVENT |
+| HIV - Key Pop: Injection Drug Use | HIV Key Pop: Injection Drug Use |  | EVENT |
+| HIV - Key Pop: More than one group | HIV Key Pop: More than 1 group |  | EVENT |
+| HIV - Key Pop: MSM | HIV Key Pop: MSM |  | EVENT |
+| HIV - Key Pop: Prisoner | HIV Key Pop: Prisoner |  | EVENT |
+| HIV - Key Pop: Sex Worker | HIV Key Pop: Sex Worker |  | EVENT |
+| HIV - Key Pop: Transgender | HIV Key Pop: Transgender |  | EVENT |
+| HIV - New Case | HIV New Case |  | EVENT |
+| HIV - New Case on ART | HIV New Case on ART |  | EVENT |
+| HIV - New Cases, Female | HIV_NEW_CASE GENDER: FEMALE |  | EVENT |
+| HIV - New cases, Male | HIV NEW CASE GENDER: MALE |  | EVENT |
+| HIV - New cases, Other gender | HIV NEW CASE GENDER: OTHER |  | EVENT |
+| HIV - New cases, Transgender | HIV NEW CASE GENDER: TRANSGENDER |  | EVENT |
+| HIV - People Living with HIV (New) | PLHIV (New) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. By NEW CASE REPORT date. | ENROLLMENT |
+| HIV - People Living with HIV (Total) | PLHIV (Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died | ENROLLMENT |
+| HIV - PLHIV Discontinued ART, Cumulative, By Facility of Visit | PLHIV_on_ART_DISCONTINUED_VISIT_CUMU | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. ART start date must be before start of reporting period. Counting all patients who discontinued ART at facility before end of period. This method double counts patient-OU pairings, not unique patients, and should be interpreted with caution. | EVENT |
+| HIV - PLHIV, Discontinued ART within Period, By Facility of Registration | PLHIV on ART (Total, including dropouts) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. ART start date must be before start of reporting period. | ENROLLMENT |
+| HIV - PLHIV on ART 6 months (New visit this period) | PLHIV, viral load eligible (Visited) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before the latest event. Must have had a visit within the period | ENROLLMENT |
+| HIV - PLHIV on ART 6 months this period | PLHIV, viral load newly eligible this period | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before point within the period, "crossing" the eligibility window. | ENROLLMENT |
+| HIV - PLHIV on ART 6 months this period and received VL results | PLHIV, new viral load with results | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before point within the period, "crossing" the eligibility window. | ENROLLMENT |
+| HIV - PLHIV on ART 6 months (Total) | PLHIV, viral load eligible (total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before the latest event. | ENROLLMENT |
+| HIV - PLHIV on ART (New on ART this period) | PLHIV on ART (New) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died | ENROLLMENT |
+| HIV - PLHIV on ART Prior To Period, By Facility of Registration | HIV PLHIV on ART (Total, Prior to Period) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Examining BEFORE THIS PERIOD to compare with current period and examine attrition. ART start date must be before start of reporting period. | ENROLLMENT |
+| HIV - PLHIV on ART Prior to Period, By Facility of Visit | PLHIV on ART_PRIOR_VISIT | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Examining BEFORE THIS PERIOD to compare with current period and examine attrition. ART start date must be before start of reporting period. This method double counts patient-OU pairings, not unique patients, and should be interpreted with caution. | EVENT |
+| HIV - PLHIV on ART (Total) | PLHIV on ART (Total) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died | ENROLLMENT |
+| HIV - PLHIV who have viral load results (New VL result this period) | PLHIV with viral load results (new) | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before the latest event. | ENROLLMENT |
+| HIV - PLHIV who have viral load results (Total) | PLHIV with viral load results | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before the latest event. | ENROLLMENT |
+| HIV - PLHIV who have viral load suppression (New VL result this period) | PLHIV with viral load suppression, new | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before the latest event. VL < 1000 | ENROLLMENT |
+| HIV - PLHIV who have viral load suppression (Total) | PLHIV with viral load suppression | Everyone enrolled in this programme is a PLHIV except those who have transferred out and those who have died. Must have had HIV test results 6 months before the latest event. VL < 1000 | ENROLLMENT |
+| HIV - PLHIV with more than 28 days since the end of last prescription period | HIV No medicine 28 days or more |  | ENROLLMENT |
+| HIV - Reason for Visit: antiretroviral drug pick up | HIV REASON FOR VISIT: ANTIRETROVIRAL DRUG ... |  | EVENT |
+| HIV - Reason for Visit: clinical visit | HIV REASON FOR VISIT: CLINICAL VISIT |  | EVENT |
+| HIV - Reason for Visit: issues and concerns | HIV REASON FOR VISIT: ISSUES AND CONCERNS |  | EVENT |
+| HIV - Reported Death | HIV patient death | Patients being surveilled who died whilst under surveillance | EVENT |
+| HIV - Reported Lost To Follow Up | HIV patient LTFU | Patients being surveilled who are lost to follow up whilst under surveillance | EVENT |
+| HIV - Reported Move To Different Location | HIV patient transferred | Patients being surveilled who arre reported transferred out or "moved to a different location" | EVENT |
+| HIV - Reported Stopped Treatment | HIV patient stopped treatment | Patients who are reported stopped treatment | EVENT |
+| HIV - Tested positive within period | HIV Tested positive |  | ENROLLMENT |
+| HIV - Tested positive within period & Initiated on ART | HIV, , tested positive, initiated on ART |  | ENROLLMENT |
+| HIV - TPT Completed, cumulative | HIV TPT Completed, cumulative |  | ENROLLMENT |
+| HIV - TPT Completed this period | HIV TPT Completed this period |  | ENROLLMENT |
+| HIV - TPT Eligible, cumulative | HIV TPT Eligible, cumulative |  | ENROLLMENT |
+| HIV - TPT Eligible, cumulative (Adult, age 15+) | HIV TPT Eligible, cumulative, 15+ | Age is as of the date eligible for TPT | ENROLLMENT |
+| HIV - TPT Eligible, cumulative (Male) | HIV TPT Eligible, cumulative, male |  | ENROLLMENT |
+| HIV - TPT Eligible, cumulative (Pediatric, age 0-14) | HIV TPT Eligible, cumulative, 0-14 | Age is as of the date eligible for TPT | ENROLLMENT |
+| HIV - TPT Eligible, cumulative (Transgender) | HIV TPT Eligible, cumulative, transgender |  | ENROLLMENT |
+| HIV - TPT Eligible this period | HIV TPT Eligible this period |  | ENROLLMENT |
+| HIV - TPT Initiated, cumulative | HIV TPT Initiated, cumulative |  | ENROLLMENT |
+| HIV - TPT Initiated, cumulative (Adult, age 15+) | HIV TPT Initiated, cumulative, 15+ | Age is as of TPT eligible date | ENROLLMENT |
+| HIV - TPT Initiated, cumulative (Female) | HIV TPT Initiated, cumulative, female |  | ENROLLMENT |
+| HIV - TPT Initiated, cumulative (Male) | HIV TPT Initiated, cumulative, male |  | ENROLLMENT |
+| HIV - TPT Initiated, cumulative (Pediatric, age 0-14) | HIV TPT Initiated, cumulative, 0-14 | Age is as of TPT eligible date | ENROLLMENT |
+| HIV - TPT Initiated, cumulative (Transgender) | HIV TPT Initiated, cumulative, transgender |  | ENROLLMENT |
+| HIV - TPT Initiated this period | HIV TPT Initiated this period |  | ENROLLMENT |
+| HIV - Treatment Status: Changed | HIV - TREATMENT STATUS: CHANGED |  | EVENT |
+| HIV - Treatment Status: death (documented) | HIV TREATMENT STATUS: DEATH (DOCUMENTED) |  | EVENT |
+| HIV - Treatment Status: lost to follow up | HIV TREATMENT STATUS: LOST TO FOLLOW UP |  | EVENT |
+| HIV - Treatment Status: on art | HIV TREATMENT STATUS: ON ART |  | EVENT |
+| HIV - Treatment Status: refused (stopped) treatment | HIV TREATMENT STATUS: REFUSED (STOPPED) TR... |  | EVENT |
+| HIV - Treatment Status: transferred out | HIV TREATMENT STATUS: TRANSFERRED OUT |  | EVENT |
+| HIV - Vertical Transmission | HIV VERTICAL TRANSMISSION |  | EVENT |
+| HIV - Visits (Events) | HIV Visit Events |  | EVENT |
+| HIV - Visits (Unique PLHIV) | HIV visit persons |  | EVENT |
+| HIV - VL Test Annual Denominator | HIV VL Test ANNUAL Denom | Only for annual level. If the current year, includes those who tested positive in first half. If last year, includes all who tested positive. | ENROLLMENT |
+| HIV - VL Test Annual Numerator | VL Test ANNUAL Num | Only for annual level. If reporting period is this year, and in second half of year, include from first half of the year. If reporting period is this year and in first half, no one positive this year is eligible. If last year, all positive cases from that year are eligible for test this year. | ENROLLMENT |
 
 ### 4.4. Ownership limitations for indicators
 
