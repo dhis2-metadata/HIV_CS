@@ -195,7 +195,7 @@ There is currently (08/03/2021) a bug that prevents the importing event reports 
 
 ### 6.1.2HIV - Visit by Gender and Treatment Status
 
-![Visit by gender and Treatment status](resources/image23.png)
+![Visit by gender and Treatment status](resources/images/image23.png)
 
 In order to recreate this pivot table, go to the app “event reports” and configure the following:
 
@@ -217,7 +217,7 @@ Select the corresponding org unit or level(Currently it is configured at nationa
 
 ### HIV - Visit by Treatment Status and District
 
-![Visit by Treatment Status and District](resources/image20.png)
+![Visit by Treatment Status and District](resources/images/image20.png)
 
 In order to recreate this pivot table, go to the app “event reports” and configure the following:
 
@@ -242,7 +242,7 @@ Row Dimensions: Organisation units
 
 ### TPT Regimes
 
-![TB PReventive therapy regimes](resources/image17.png)
+![TB PReventive therapy regimes](resources/images/image17.png)
 In order to recreate this pivot table, go to the app “event reports” and configure the following:
 
 Table Style: Pivot table
@@ -328,16 +328,16 @@ Last step remaining is to create a trigger which will execute this function afte
 
 We check the table at present and verify that is empty:
 
-![table](resources/image15.png)
+![table](resources/images/image15.png)
 
 After accessing the instance, we proceed to enroll a new case in the HIV CS program. The result is as follows:
 
-![Visit by Treatment Status and District](resources/image22.png)
+![Visit by Treatment Status and District](resources/images/image22.png)
 
 Please note that the UID for this new TEI is qFdfVhUGFZ8.
 
 Checking the table enrollmentou, we can see that a new row has been created.
-![Visit by Treatment Status and District](resources/image1.png)
+![Visit by Treatment Status and District](resources/images/image1.png)
 It is possible to create a SQL view to provide the contents of enrollmentou table in a more user friendly way, so the user can easily check what the enrollment ou was for each TEI in the program. The SQL view is as follows:
 
 ```SELECT tei.uid as tei_uid, eou.uid as enrollment_uid, ou.name as enrollment_ou
@@ -349,15 +349,15 @@ INNER JOIN organisationunit ou ON eou.organisationunitid = ou.organisationunitid
 
 And the result is:
 
-![Visit by Treatment Status and District](resources/image27.png)
+![Visit by Treatment Status and District](resources/images/image27.png)
 
 We can now verify the current enrollment OU and ownership OU are the same for this TEI:
 
-![Visit by Treatment Status and District](resources/image13.png)
+![Visit by Treatment Status and District](resources/images/image13.png)
 
 Also in the UI:
 
-![Visit by Treatment Status and District](resources/image19.png)
+![Visit by Treatment Status and District](resources/images/image19.png)
 
 ### Step 2: Create a function and trigger on trackedentityprogramowner
 
@@ -394,22 +394,22 @@ Function log_ownership_ou_changes will be triggered when an INSERT or UPDATE tak
 
 We proceed to refer the patient, making a permanent move:
 
-![Visit by Treatment Status and District](resources/image16.png)
+![Visit by Treatment Status and District](resources/images/image16.png)
 
 We can check that the ownership has changed to Crow Health Centre:
 
 We also check the table in the database:
 
-![Visit by Treatment Status and District](resources/image24.png)
+![Visit by Treatment Status and District](resources/images/image24.png)
 
 The OU ownership is “Crow Health Centre” but also that is the new enrollment OU as well, so the trigger successfully performed the update in the program instance table. If we refresh the browser, we see this:
 
-![Visit by Treatment Status and District](resources/image7.png)
+![Visit by Treatment Status and District](resources/images/image7.png)
 
 Ownership and enrollment are the same.
 
 Finally, we verify that nothing has changed in the enrollmentou table:
 
-![Visit by Treatment Status and District](resources/image13.png)
+![Visit by Treatment Status and District](resources/images/image13.png)
 
 So we still have the information about the enrollment organization unit.
