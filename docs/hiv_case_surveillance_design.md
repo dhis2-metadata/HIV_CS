@@ -1,6 +1,6 @@
 # HIV Case Surveillance Metadata Package System Design { #hiv_cs_design }
 
-## 1. Background and Purpose
+## Background and Purpose
 
 The HIV Case Surveillance system is designed to support implementation of the [WHO’s consolidated guidelines on person-centered HIV patient monitoring and case surveillance (2017)](http://www.who.int/hiv/pub/guidelines/person-centred-hiv-monitoring-guidelines/en/) and the updated 2020 [Consolidated HIV Strategic Information Guidelines: Driving Impact Through Programme Monitoring and Managemen](https://apps.who.int/iris/handle/10665/331697)t, as well as the not yet published Digital Accelerator Kit for HIV.
 
@@ -8,18 +8,18 @@ HIV Case Surveillance is related to, yet distinct from, patient monitoring; it r
 
 The basic principles of operation are based on the [WHO’s Consolidated Guidelines on Person-Centred HIV Surveillance](https://www.who.int/hiv/pub/guidelines/person-centred-hiv-monitoring-guidelines/en/) and respective annexes, whilst at the same time being informed by the yet to be published[Digital Accelerator Kit for HIV.]( https://www.who.int/reproductivehealth/publications/digital-accelerator-kits/en/)
 
-## 2. System Design Overview
+## System Design Overview
 
-### 2.1. Use Case
+### Use Case
 
 The requirements for tracking an individual case over time and linking key sentinel events to that case necessitates the use of unique identification standards, possibly composed of one or more unique identifiers, and/or patient identifying information. The Tracker data model in DHIS2 is used to meet these requirements. This program is designed to capture the minimum data elements necessary to produce the required indicators identified by[the consolidated guidelines for person-centered HIV monitoring](https://www.who.int/hiv/pub/guidelines/person-centred-hiv-monitoring-guidelines/en/). \
 The program includes some basic level of decision support and prompts to aid those countries which will be using it within a clinical setting, thereby adding the need for extra data inputs. Whilst the primary purpose of this configuration is for programme management, it can be modified to be used as a clinical care tool.
 
-### 2.2. Workflow
+### Workflow
 
 ![Workflow](resources/images/workflow.png)
 
-### 2.3. Programme Structure
+### Programme Structure
 
 | Stage | Description |
 |---|---|
@@ -28,21 +28,21 @@ The program includes some basic level of decision support and prompts to aid tho
 | Treatment Visit | The Visit stage is the stage where all the treatment components are recorded.Once the reason for the visit is recorded, the first check is the reason for the visit and whether or not the PLHIV has begun their treatment and when. The rest of the data elements are hidden until the treatment has started.The second check is whether the PLHIV is eligible for Tuberculosis preventive therapy. If they are, a section on TPT is unhidden, where the treatment start, type and completion can be recorded. Finally there is a treatment status check, where PLHIV can be categorised as Retained on ART, having stopped their treatment, transferred or died.If the treatment status is retained on ART, it reveals the option to add how many days of ART is provided and it automatically calculates when is their last day with ART.If the patient has been on ART for more than 180 days, the fields for viral load testing information appear, including the test date, viral load status and if available, the previous viral load value. This is a repeatable stage, as it will be conducted continuously over the lifespan of the case re-visiting the clinic to pick up medicine, perform checkups,and routine (and/or targeted) viral load testing, based on WHO and national clinical guidelines. |
 | Follow-Up | This Stage is not tied to any indicators and is purely designed as a tool for recording any contact made with patients who have missed treatment visits, and will need to be contacted. This is a repeatable stage, to allow for multiple follow-ups. |
 
-## 3. Tracker Configuration
+## Tracker Configuration
 
-### 3.1. Tracked Entity Instance
+### Tracked Entity Instance
 
 The program uses the Tracked Entity Instance type “Person”. The TEI will be enrolled for their lifetime in this tracker and they will be enrolled after they have been diagnosed with HIV. This presumes that there is a separate registry for HIV tests outside of this program.
 
-### 3.2. Stages
+### Stages
 
-#### 3.2.1. Enrollment & Initial Case Stages
+#### Enrollment & Initial Case Stages
 
 The initial case stage is included with the enrollment stage to facilitate data entry. Note that sections and some of the program rule actions are not supported when the stage is included in the enrollment screen, and therefore some of the form behaviour might not be as expected.
 
 ![Enrollment](resources/images/enrollment.png)
 
-##### 3.2.1.1 Enrollment
+##### Enrollment
 
 The enrollment stage gathers all the attributes of a person registered. A country should modify the enrollment to ensure that it matches their needs and practices.
 
@@ -64,7 +64,7 @@ The enrollment stage gathers all the attributes of a person registered. A countr
 | NHIS ID | System Generated |
 | Communication consent - the client gives consent to be contacted | Yes/No |
 
-###### 3.2.1.1.1. Identifiers
+###### Identifiers
 
 Currently, the programme has four unique identifiers in addition to personally identifying information in order to minimise duplication. If the identifiers are all done within the same instance of DHIS2, they can all be validated as unique. Modifying the identifiers is likely to be one of the first changes needed to adapt the package to the local context.
 
@@ -80,7 +80,7 @@ DHIS2 can be programmed to assign unique identifiers automatically based on a ru
 
 If you will be using android devices, there are some issues if the system-assigned pattern is sequential or date-based. More information here: [https://docs.dhis2.org/](https://docs.dhis2.org/en/implement/android-implementation/dhis2-configuration-for-android.html#implementation_guide_dhis2_config_reserved_id)  
 
-##### 3.2.1.2. Initial Case
+##### Initial Case
 
 The initial case stage is annexed to the enrollment stage for data entering purposes.
 This stage records the basic information about the patient's HIV diagnosis that is not likely to change. (If there is a change to KP status, for example the patient is no longer incarcerated, this can later be updated in the case report if necessary).
@@ -103,7 +103,7 @@ This stage records the basic information about the patient's HIV diagnosis that 
 
 If a patient’s gender is marked as “transgender”, a warning shows up prompting the user to mark their key population status as “transgender”
 
-#### 3.2.2. Treatment Visit
+#### Treatment Visit
 
 ![Visit](resources/images/visit.png)
 
@@ -158,7 +158,7 @@ If if the viral load is less than 1000 copies/ml, the field “Viral load test r
 
 At the end of the section inputting the days of ART provided will calculate the last date with ART, which is an aid to schedule the next appointment.
 
-### 3.2.3. Follow Up
+### Follow Up
 
 ![Follow up](resources/images/followup.png)
 
@@ -176,7 +176,7 @@ It records the reason why this follow up is needed (Missed clinical care visit, 
 
 ![Follow up](resources/images/followup2.png)
 
-### 3.3. Data Entry Screen Set-up
+### Data Entry Screen Set-up
 
 An initial setup is necessary to optimally configure the patient data entry screen.
 
@@ -190,11 +190,11 @@ By clicking on the cog icon on the top right hand side you can access the widget
 
 The top information bar can be used to highlight relevant information. In this picture, it shows the name, date of birth, the number of days since the last visit (in case it has exceeded 28 days) and the number of days without medicine if relevant. This bar can be modified and configured according to the user's need to display other information. For information on how to configure the top bar see the documentation: [https://docs.dhis2.org/en/use/user-guides/dhis-core-version-236/tracking-individual-level-data/tracker-capture.html#top-bar](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-236/tracking-individual-level-data/tracker-capture.html#top-bar)
 
-### 3.4. Security and Access
+### Security and Access
 
 For general security considerations about your DHIS2 instance, please see [https://dhis2.org/security/](https://dhis2.org/security/)
 
-#### 3.4.1. Search Settings
+#### Search Settings
 
 The programme is currently set to “Open” which means that, as long as users are allowed to search in other org units by the [user search settings](https://docs.dhis2.org/en/implement/understanding-dhis2-implementation/users-and-user-roles.html) which have been assigned to the them, they will be able to search and access patients in other organisation units.  
 
@@ -202,7 +202,7 @@ A more secure option would be to set up the programme as **protected**. This mea
 
 Note that for android-based implementations, if you want users to be able to search clients in a different org unit than their own, the search settings MUST be set to “open” as the other search features are not fully supported. More information available here: [https://docs.dhis2.org/en/full/implement/dhis2-android-configuration-guide.html](https://docs.dhis2.org/en/full/implement/dhis2-android-configuration-guide.html)
 
-#### 3.4.2 User Management
+#### User Management
 
 There are three user groups currently included in the package.
 
@@ -214,7 +214,7 @@ There are three user groups currently included in the package.
 
 The country implementing it should ensure that users have data entry rights for their respective Organisation units, and search rights for all organisation units which will be providing HIV services to facilitate movement between clinics.
 
-#### 3.4.3 Referrals and Ownership
+#### Referrals and Ownership
 
 Within Tracker, the organisational unit is both the enrolling org unit and has ownership of the case. The ownership of the case can be transferred between organization units using the "move permanently" functionality, or simply referred for services, using the "one time referral" function. The program can also be configured to allow for many/all org units to have access to provide services (or "register events") even without transferring ownership.
 To do this, one needs to first click on the “make referral” button
@@ -225,7 +225,7 @@ This will open the referral window, which will allow for a one time referral or 
 
 ![Referral](resources/images/referral2.png)
 
-### 3.5 Program Rules
+### Program Rules
 
 The programme includes several logic rules to facilitate data entry and workflow and calculations, as well as display useful information.
 
@@ -266,9 +266,9 @@ The programme includes several logic rules to facilitate data entry and workflow
 | Show viral load testing warning. | nCEVmOVXATp | If the days between the date of initiation or previous date of initiation are less than 180, then show message "Viral load tests should only be performed after six months on treatment" |  | d2:daysBetween( #{Date of Initiation}, V{event_date} )   <= 180 |
 | If TG show warning assign tre to TG Keypop | CxoJG6aPGxD | If the patient has "Transgender" as their gender attribute, prompt to mark as TG in keypop |  | A{Gender} == 'TG' |
 
-## 4. Analytics
+## Analytics
 
-### 4.1. Dashboards and Indicators
+### Dashboards and Indicators
 
 Six dashboards are included in the metadata package, based on program indicators and indicators derived from HIV Case Surveillance program data. By default, dashboards are accessible to all users with access to the HIV Case Surveillance program.
 
@@ -283,7 +283,7 @@ Each of these dashboards is described in the table below.
 
 *Note that for comparison purposes, some dashboard items in the Epidemic Status dashboard depend on Official Spectrum Estimates of HIV prevalence. These estimates can be entered as aggregate data in the “PLHIV Estimates” program for any geographic level and year they are available.
 
-### 4.2. Dashboard Overview
+### Dashboard Overview
 
 Dashboard name, description, and data use questions
 
@@ -295,8 +295,6 @@ Newly reported cases by month, geography, and key population group. Cumulative c
 - How has registration of new HIV cases changed this year compared to last?
 - Have most new HIV cases also initiated ART?
 - Is the epidemic concentrated in a certain KP group or region?
-
-
 
 **HIV CS - 2. ART Linkage & Retention**
 
@@ -349,7 +347,7 @@ Encounter-based indicators specifically designed for monitoring HIV CS roll-out 
 -What was the most frequent reason for patient visits over the last 3 months?
 -Which patients had reportedly discontinued ART last month at my facility? 
 
-### 4.3. Indicators and Program Indicators
+### Indicators and Program Indicators
 
 Included within the package there are 116 program indicators and XYZ indicators, based on individual-level data gathered in the Tracker system. As a general rule, program indicators count HIV cases meeting specific criteria; indicators are percentages based on those counts. These program indicators and indicators populate charts, maps, and tables which are shown on the dashboards.
 
@@ -474,7 +472,7 @@ Special attention should be made to program indicators marked “cumulative”, 
 | HIV - VL Test Annual Denominator | HIV VL Test ANNUAL Denom | Only for annual level. If the current year, includes those who tested positive in first half. If last year, includes all who tested positive. | ENROLLMENT |
 | HIV - VL Test Annual Numerator | VL Test ANNUAL Num | Only for annual level. If reporting period is this year, and in second half of year, include from first half of the year. If reporting period is this year and in first half, no one positive this year is eligible. If last year, all positive cases from that year are eligible for test this year. | ENROLLMENT |
 
-### 4.4. Ownership limitations for indicators
+### Ownership limitations for indicators
 
 If a program indicator analyzes patient data entered across two events or more, this is made possible through an_enrollment-type_ program indicator.
 
@@ -484,19 +482,19 @@ This is a critical limitation of DHIS2 analytics which package implementers must
 
 Until this is part of the core functionality, the workarounds are to rely on national indicators, or to use a script to change the enrollment org unit to the owner org unit. For more information about this workaround see the installation guide
 
-## 5. Metadata
+## Metadata
 
 On our github repository you can find the link to the latest version of the metadata. Note that this is not the final version of this package and it will be updated as soon as possible:
 [Link to github](https://github.com/dhis2/metadata-package-development/tree/master/metadata/HIV_Tracker)
 
-## 6. Android Compatibility
+## Android Compatibility
 
 The package is natively compatible with the DHIS2 Data Capture app for android. There are, however, some considerations to be aware of when implementing this package with android devices:
 
-### 6.1. Automatically Assigned UiDs
+### Automatically Assigned UiDs
 
 If you will be using android devices, and you will be using automatically generated IDs which are sequential or based on dates, you need to be aware that in order to be able to work offline, android devices reserve sets of UiDs in bulk in advance. This means that the UiDs assigned may not necessarily correspond with the chronological order in which the patients are registered. For more information see [here](https://docs.dhis2.org/en/implement/android-implementation/dhis2-configuration-for-android.html#implementation_guide_dhis2_config_reserved_id).
 
-### 6.2 Search Functionality
+### Search Functionality
 
 Note that for android-based implementations, if you want users to be able to search clients in a different org unit than their own, the search settings MUST be set to “open” as the other search features are not fully supported. More information available [here](https://docs.dhis2.org/en/full/implement/dhis2-android-configuration-guide.html).
