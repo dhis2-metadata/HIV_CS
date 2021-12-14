@@ -84,6 +84,7 @@ If you will be using android devices, there are some issues if the system-assign
 
 The initial case stage is annexed to the enrollment stage for data entering purposes.
 This stage records the basic information about the patient's HIV diagnosis that is not likely to change. (If there is a change to KP status, for example the patient is no longer incarcerated, this can later be updated in the case report if necessary).
+
 | Name | Value |
 |---|---|
 | Initial case report | date |
@@ -97,11 +98,11 @@ This stage records the basic information about the patient's HIV diagnosis that 
 | Key population - Injection drug users | Yes only |
 | Key population - people in prison or other closed settings | Yes only |
 | Key population - Sex worker | Yes only |
-| Key population - Transgender | Yes only  |
+| Key population - Transgender | Yes only |
 
 ![Initial case report](resources/images/initial.png)
 
-If a patient’s gender is marked as “transgender”, a warning shows up prompting the user to mark their key population status as “transgender”
+If a patient’s gender is marked as “transgender”, a warning shows up prompting the user to mark their key population status as “transgender”.
 
 #### Treatment Visit
 
