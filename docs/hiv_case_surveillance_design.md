@@ -1,4 +1,4 @@
-# HIV Case Surveillance Metadata Package System Design { #hiv_cs_design }
+# HIV Case Surveillance System Design { #hiv-cs-design }
 
 ## Background and Purpose
 
