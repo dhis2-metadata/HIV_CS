@@ -481,14 +481,14 @@ In DHIS2 version 2.39 and below, DHIS2 program indicators cannot differentiate b
 
 In [DHIS2 version 40](https://docs.dhis2.org/en/implement/software-release-information/dhis2-core-releases/dhis-core-version-240/release-notes.html) program indicators based on ownership organization unit were introduced. For example, you can count the number of unique PLHIV that are receiving care at a facility even if they were not originally enrolled in care at that facility or officially transferred. Specifically, program indicators can define which ***organisation unit dimension*** to be used in analytics. Choices include the organisation unit for the event, enrollment, registration, organisation unit data element and tracked entity instance ownership at the *start or end* of the reporting period.
 
-More detailed guidance about Ownership Analytics can be found in the [Tracker Design Guide](https://docs.dhis2.org/en/implement/database-design/tracker-system-design/tracker-analytics.html#common-challenge-3-transfers-and-ownership), and in the [Jira ticket for this feature]().
+More detailed guidance about Ownership Analytics can be found in the [Tracker Design Guide](https://docs.dhis2.org/en/implement/database-design/tracker-system-design/tracker-analytics.html#common-challenge-3-transfers-and-ownership), and in the [Jira ticket for this feature](https://dhis2.atlassian.net/browse/DHIS2-11597).
 
 When upgrading to version 40, program indicators will default to the same organization unit dimension as prior versions: event-type program indicators will use Event organization unit, and enrollment-type use enrollment organization unit. The version 40 compatible HIV CS metadata package does not automatically update Program Indicators to ownership at start or end of period.
 
 
 >  **Warning**
 >
->It is the responsibility of the implementer to decide what type of organization unit dimension to assign to each program indicator, according to national guidelines and in consultation with end users.
+> It is the responsibility of the implementer to decide what type of organization unit dimension to assign to each program indicator, according to national guidelines and in consultation with end users.
 
 
 
