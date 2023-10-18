@@ -473,15 +473,24 @@ Special attention should be made to program indicators marked “cumulative”, 
 | HIV - VL Test Annual Denominator | HIV VL Test ANNUAL Denom | Only for annual level. If the current year, includes those who tested positive in first half. If last year, includes all who tested positive. | ENROLLMENT |
 | HIV - VL Test Annual Numerator | VL Test ANNUAL Num | Only for annual level. If reporting period is this year, and in second half of year, include from first half of the year. If reporting period is this year and in first half, no one positive this year is eligible. If last year, all positive cases from that year are eligible for test this year. | ENROLLMENT |
 
-### Ownership limitations for indicators
+### Ownership Analytics in DHIS2 version 40
 
-If a program indicator analyzes patient data entered across two events or more, this is made possible through an_enrollment-type_ program indicator.
+If a program indicator analyzes patient data entered across two events or more, this is made possible through an _enrollment-type_ program indicator.
 
-Currently, DHIS2 program indicators cannot differentiate between the _ownership_org unit and the _enrollment_org unit. In practical terms, this means that when a patient has moved between sites, all longitudinal indicators for this patient are not re-assigned to the patient’s latest site, and remain assigned to the initial site where the patient first entered the program.
+In DHIS2 version 2.39 and below, DHIS2 program indicators cannot differentiate between the _ownership_ org unit and the _enrollment_ org unit. In practical terms, this means that when a patient has moved between sites, all longitudinal indicators for this patient are not re-assigned to the patient’s latest site, and remain assigned to the initial site where the patient first entered the program. This is a critical limitation which package implementers must consider, especially when interpreting longitudinal case surveillance indicators such as mortality rates and attrition rates.
 
-This is a critical limitation of DHIS2 analytics which package implementers must consider, especially when interpreting longitudinal case surveillance indicators such as mortality rates and attrition rates. Tracker analytics based on record’s ownership org unit is not currently supported by the DHIS2 indicator engine, but will be made available in future releases of DHIS2.  
+In [DHIS2 version 40](https://docs.dhis2.org/en/implement/software-release-information/dhis2-core-releases/dhis-core-version-240/release-notes.html) program indicators based on ownership organization unit were introduced. For example, you can count the number of unique PLHIV that are receiving care at a facility even if they were not originally enrolled in care at that facility or officially transferred. Specifically, program indicators can define which ***organisation unit dimension*** to be used in analytics. Choices include the organisation unit for the event, enrollment, registration, organisation unit data element and tracked entity instance ownership at the *start or end* of the reporting period.
 
-Until this is part of the core functionality, the workarounds are to rely on national indicators, or to use a script to change the enrollment org unit to the owner org unit. For more information about this workaround see the installation guide
+More detailed guidance about Ownership Analytics can be found in the [Tracker Design Guide](https://docs.dhis2.org/en/implement/database-design/tracker-system-design/tracker-analytics.html#common-challenge-3-transfers-and-ownership), and in the [Jira ticket for this feature](https://dhis2.atlassian.net/browse/DHIS2-11597).
+
+When upgrading to version 40, program indicators will default to the same organization unit dimension as prior versions: event-type program indicators will use Event organization unit, and enrollment-type use enrollment organization unit. The version 40 compatible HIV CS metadata package does not automatically update Program Indicators to ownership at start or end of period.
+
+
+>  **Warning**
+>
+> It is the responsibility of the implementer to decide what type of organization unit dimension to assign to each program indicator, according to national guidelines and in consultation with end users.
+
+
 
 ## Metadata
 
