@@ -14,4 +14,4 @@
 
 ## Metadata Reference
 
-[Version 1.0.0][(https://github.com/dhis2/metadata-package-development/raw/master/metadata/HIV_Tracker/HIV_CS_TRK_V1.0.0_DHIS2.36/reference.xlsx]
+[Version 1.0.0](https://github.com/dhis2/metadata-package-development/raw/master/metadata/HIV_Tracker/HIV_CS_TRK_V1.0.0_DHIS2.36/reference.xlsx)
