@@ -30247,83 +30247,6 @@
             "categoryCombo": {
                 "id": "bjDvmb4bfuf"
             },
-            "code": "HIV_TEST_M",
-            "domainType": "AGGREGATE",
-            "formName": "HIV tests performed",
-            "id": "sX7pWYXIVIi",
-            "legendSets": [],
-            "name": "HIV - HIV tests performed (M)",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "HIV tests performed (M)",
-            "translations": [],
-            "valueType": "INTEGER_ZERO_OR_POSITIVE",
-            "zeroIsSignificant": true
-        },
-        {
-            "aggregationLevels": [],
-            "aggregationType": "SUM",
-            "attributeValues": [],
-            "categoryCombo": {
-                "id": "bjDvmb4bfuf"
-            },
-            "code": "HIV_TEST+_M",
-            "description": "HIV tests found to be positive",
-            "domainType": "AGGREGATE",
-            "formName": "HIV tests positive",
-            "id": "O6wdXKIZ5L2",
-            "legendSets": [],
-            "name": "HIV - HIV tests positive (M)",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "HIV tests positive (M)",
-            "translations": [],
-            "valueType": "INTEGER_ZERO_OR_POSITIVE",
-            "zeroIsSignificant": true
-        },
-        {
-            "aggregationLevels": [],
-            "aggregationType": "SUM",
-            "attributeValues": [],
-            "categoryCombo": {
-                "id": "bjDvmb4bfuf"
-            },
             "code": "HIV_TB_TPT_REGIMEN_3RH_M",
             "domainType": "AGGREGATE",
             "formName": "TPT regimen: 3RH (three months of daily rifampicin plus isoniazid)",
@@ -30447,7 +30370,7 @@
             "dataSetElements": [
                 {
                     "dataElement": {
-                        "id": "nsdIMP86n3F"
+                        "id": "lN7x3SAgZjG"
                     },
                     "dataSet": {
                         "id": "YAXqHAcouCU"
@@ -30455,7 +30378,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "rQRx4rIu99Q"
+                        "id": "nsdIMP86n3F"
                     },
                     "dataSet": {
                         "id": "YAXqHAcouCU"
@@ -30471,7 +30394,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "lN7x3SAgZjG"
+                        "id": "rQRx4rIu99Q"
                     },
                     "dataSet": {
                         "id": "YAXqHAcouCU"
@@ -30532,14 +30455,6 @@
             "dataSetElements": [
                 {
                     "dataElement": {
-                        "id": "ORYyhLEyzrA"
-                    },
-                    "dataSet": {
-                        "id": "JbpOV6hhF5g"
-                    }
-                },
-                {
-                    "dataElement": {
                         "id": "k4CZoD6FRDn"
                     },
                     "dataSet": {
@@ -30549,6 +30464,14 @@
                 {
                     "dataElement": {
                         "id": "VbPMQ21t8QT"
+                    },
+                    "dataSet": {
+                        "id": "JbpOV6hhF5g"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "ORYyhLEyzrA"
                     },
                     "dataSet": {
                         "id": "JbpOV6hhF5g"
@@ -30609,167 +30532,7 @@
             "dataSetElements": [
                 {
                     "dataElement": {
-                        "id": "zshRudwg87a"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "H1cSfNHL6C2"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "Xrpjg0l9vaS"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "mByCpYEmPGC"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "J98v1jqbY9l"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "JtdLWxCBnvE"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "OQ9sGyBpsjr"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "lcjNWi8cqRQ"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "fdYuUdxrCHG"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "FLLXasLwJBd"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "TDsHcpQ4E37"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "aQGYEYWTP4Y"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "O3r9N9nVnoC"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "EEpI9cBZiwA"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "pzgUO1I2JSC"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "v343lO63eEQ"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "wZTtcoInGCy"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "eCVkRrRLdFT"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "XlLKpOeGVwd"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "JMwpaNm8dMn"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "ge7XNf9l66E"
+                        "id": "EVpCTQk1A1U"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30785,7 +30548,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "FIlKacTUKeM"
+                        "id": "jltjGM6qLjH"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30793,7 +30556,47 @@
                 },
                 {
                     "dataElement": {
-                        "id": "r9RMOeS9qeH"
+                        "id": "fdYuUdxrCHG"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "c4yyYs2bBjm"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "mByCpYEmPGC"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "ge7XNf9l66E"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "jCLUs9OcMMG"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "mfGaOlWuQgA"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30809,7 +30612,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "HFA14Eunpdp"
+                        "id": "gJ2Gr5exsxA"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30817,7 +30620,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "WUOil7FAVqw"
+                        "id": "H1cSfNHL6C2"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30825,7 +30628,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "Ub3RZOI0BEs"
+                        "id": "qdJhgv5bRKi"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30833,7 +30636,15 @@
                 },
                 {
                     "dataElement": {
-                        "id": "rjjwtYnzfKQ"
+                        "id": "PDCVwItRWCo"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "nu8NCxX6D3O"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30849,7 +30660,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "gJ2Gr5exsxA"
+                        "id": "rjjwtYnzfKQ"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30857,7 +30668,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "jltjGM6qLjH"
+                        "id": "Xrpjg0l9vaS"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30865,7 +30676,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "mqIVTKwfWl7"
+                        "id": "o8blexx4SAI"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30873,39 +30684,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "enV6EJcOqsH"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "RTx8tiLbXzy"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "EVpCTQk1A1U"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "IGdoUc8Se6p"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "tFXkSj2fRcF"
+                        "id": "g42Q5t4RjN7"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30921,7 +30700,143 @@
                 },
                 {
                     "dataElement": {
-                        "id": "g42Q5t4RjN7"
+                        "id": "nDf6ykLqeRe"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "FLLXasLwJBd"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "FK4ozWkCyAm"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "EEpI9cBZiwA"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "tycGhDUiPPG"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "XlLKpOeGVwd"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "FIlKacTUKeM"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "aQGYEYWTP4Y"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "RTx8tiLbXzy"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "TDsHcpQ4E37"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "nfGUNwZwbrd"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "WUOil7FAVqw"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "aQlm4SoAZMX"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "r9RMOeS9qeH"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "mqIVTKwfWl7"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "EUWBeNa95KS"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "Ub3RZOI0BEs"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "v343lO63eEQ"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30945,14 +30860,6 @@
                 },
                 {
                     "dataElement": {
-                        "id": "PDCVwItRWCo"
-                    },
-                    "dataSet": {
-                        "id": "XvcWsuHBsGA"
-                    }
-                },
-                {
-                    "dataElement": {
                         "id": "wC78Qp4ZHoO"
                     },
                     "dataSet": {
@@ -30961,7 +30868,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "mfGaOlWuQgA"
+                        "id": "OQ9sGyBpsjr"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30969,7 +30876,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "o8blexx4SAI"
+                        "id": "tFXkSj2fRcF"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30977,7 +30884,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "c4yyYs2bBjm"
+                        "id": "IGdoUc8Se6p"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30985,7 +30892,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "aQlm4SoAZMX"
+                        "id": "eCVkRrRLdFT"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -30993,7 +30900,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "nfGUNwZwbrd"
+                        "id": "enV6EJcOqsH"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -31001,7 +30908,15 @@
                 },
                 {
                     "dataElement": {
-                        "id": "jCLUs9OcMMG"
+                        "id": "zshRudwg87a"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "lcjNWi8cqRQ"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -31017,7 +30932,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "FK4ozWkCyAm"
+                        "id": "HFA14Eunpdp"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -31025,7 +30940,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "tycGhDUiPPG"
+                        "id": "JtdLWxCBnvE"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -31033,7 +30948,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "nDf6ykLqeRe"
+                        "id": "O3r9N9nVnoC"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -31041,7 +30956,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "EUWBeNa95KS"
+                        "id": "J98v1jqbY9l"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -31049,7 +30964,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "qdJhgv5bRKi"
+                        "id": "pzgUO1I2JSC"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -31057,7 +30972,15 @@
                 },
                 {
                     "dataElement": {
-                        "id": "nu8NCxX6D3O"
+                        "id": "JMwpaNm8dMn"
+                    },
+                    "dataSet": {
+                        "id": "XvcWsuHBsGA"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "wZTtcoInGCy"
                     },
                     "dataSet": {
                         "id": "XvcWsuHBsGA"
@@ -31118,303 +31041,7 @@
             "dataSetElements": [
                 {
                     "dataElement": {
-                        "id": "OZqNwQMt3AY"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "xUysisLKY5G"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "X0EgHjrmClw"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "ve0jvpw1urV"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "C9WEvoApS2E"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "JDOP61KBynv"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "Hy6AwOBQFzn"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "SfK3OEyNaEk"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "vBOOTR8Qe5Q"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "PJNUwF03Yzl"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "uZVsuo2yRtq"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "f98DLLDR2dM"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "gR4n8Tdrzh6"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "ahKzxvvB4Bn"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "Q4zeRCEyKQ7"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "yUkLfICdS0T"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "HtxoT1mH09t"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "CCr5r94bUsb"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "AWm7dZRpmmR"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "Xe19OSWm1H3"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "zalAFrKKJWG"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "D1qiQ0u1aww"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "gXhV7eakVeo"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "buNu4CsEnz4"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "SVgPQyN7Y31"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "qnCpbGwxDLJ"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "uUPLnPJy9xs"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "EN8tvNv8irH"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "GseJGqjCPA2"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "hCfO0OUnF6L"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "UevSCxTkjXp"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "GQt9fUVkQTR"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "c18H5bN8I5Z"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "AoGeLpbunUc"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "HyX6JJcspiC"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "bgkjqz0DTkY"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "iDO0bNciGgI"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "nUbghBIQfu2"
+                        "id": "vg1fdNg1Pkd"
                     },
                     "dataSet": {
                         "id": "gXVC77Nwpwr"
@@ -31430,71 +31057,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "zC1vurzIU43"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "EKCrnVE18Zd"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "Sf0lpVFHepB"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "ilodimN4Xwb"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "Rx8Qb6DkLbo"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "okqODe4AL4C"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "gU5WlXimgAf"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "Ww3OiuekNnz"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "KvhL6lXpa1P"
+                        "id": "qnCpbGwxDLJ"
                     },
                     "dataSet": {
                         "id": "gXVC77Nwpwr"
@@ -31510,31 +31073,87 @@
                 },
                 {
                     "dataElement": {
+                        "id": "X0EgHjrmClw"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "vBOOTR8Qe5Q"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "gU5WlXimgAf"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "hCfO0OUnF6L"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "GseJGqjCPA2"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "c18H5bN8I5Z"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "CCr5r94bUsb"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "Rx8Qb6DkLbo"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "JDOP61KBynv"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "AWm7dZRpmmR"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
                         "id": "K48OLflJ9ZM"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "LkmzlAtLfLa"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "VoQ8IQf8oBw"
-                    },
-                    "dataSet": {
-                        "id": "gXVC77Nwpwr"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "ulXGGwTDjBu"
                     },
                     "dataSet": {
                         "id": "gXVC77Nwpwr"
@@ -31550,7 +31169,39 @@
                 },
                 {
                     "dataElement": {
-                        "id": "vg1fdNg1Pkd"
+                        "id": "yUkLfICdS0T"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "OZqNwQMt3AY"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "ahKzxvvB4Bn"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "buNu4CsEnz4"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "ulXGGwTDjBu"
                     },
                     "dataSet": {
                         "id": "gXVC77Nwpwr"
@@ -31559,6 +31210,278 @@
                 {
                     "dataElement": {
                         "id": "t27pnLRiPDR"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "Sf0lpVFHepB"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "gXhV7eakVeo"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "zC1vurzIU43"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "EN8tvNv8irH"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "Ww3OiuekNnz"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "xUysisLKY5G"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "f98DLLDR2dM"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "D1qiQ0u1aww"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "LkmzlAtLfLa"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "HtxoT1mH09t"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "EKCrnVE18Zd"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "AoGeLpbunUc"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "Xe19OSWm1H3"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "nUbghBIQfu2"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "VoQ8IQf8oBw"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "GQt9fUVkQTR"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "okqODe4AL4C"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "bgkjqz0DTkY"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "PJNUwF03Yzl"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "iDO0bNciGgI"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "ve0jvpw1urV"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "Hy6AwOBQFzn"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "gR4n8Tdrzh6"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "HyX6JJcspiC"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "C9WEvoApS2E"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "UevSCxTkjXp"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "ilodimN4Xwb"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "SVgPQyN7Y31"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "uZVsuo2yRtq"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "KvhL6lXpa1P"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "SfK3OEyNaEk"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "zalAFrKKJWG"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "Q4zeRCEyKQ7"
+                    },
+                    "dataSet": {
+                        "id": "gXVC77Nwpwr"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "uUPLnPJy9xs"
                     },
                     "dataSet": {
                         "id": "gXVC77Nwpwr"
@@ -31619,7 +31542,7 @@
             "dataSetElements": [
                 {
                     "dataElement": {
-                        "id": "M78W2c5IUXL"
+                        "id": "BnZtJpKLZDL"
                     },
                     "dataSet": {
                         "id": "bZmE2DR3XZe"
@@ -31635,31 +31558,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "ag4tjINmlQZ"
-                    },
-                    "dataSet": {
-                        "id": "bZmE2DR3XZe"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "sCOWKmNzyS7"
-                    },
-                    "dataSet": {
-                        "id": "bZmE2DR3XZe"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "nIeeD2phLos"
-                    },
-                    "dataSet": {
-                        "id": "bZmE2DR3XZe"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "UFQ1gDMMR29"
+                        "id": "Zck0V9JZX2H"
                     },
                     "dataSet": {
                         "id": "bZmE2DR3XZe"
@@ -31675,7 +31574,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "cBAmnV0i4Bh"
+                        "id": "M78W2c5IUXL"
                     },
                     "dataSet": {
                         "id": "bZmE2DR3XZe"
@@ -31683,7 +31582,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "iWzcI326RiJ"
+                        "id": "cBAmnV0i4Bh"
                     },
                     "dataSet": {
                         "id": "bZmE2DR3XZe"
@@ -31699,7 +31598,15 @@
                 },
                 {
                     "dataElement": {
-                        "id": "BnZtJpKLZDL"
+                        "id": "liwHs93BPfD"
+                    },
+                    "dataSet": {
+                        "id": "bZmE2DR3XZe"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "ag4tjINmlQZ"
                     },
                     "dataSet": {
                         "id": "bZmE2DR3XZe"
@@ -31715,7 +31622,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "liwHs93BPfD"
+                        "id": "nIeeD2phLos"
                     },
                     "dataSet": {
                         "id": "bZmE2DR3XZe"
@@ -31723,7 +31630,23 @@
                 },
                 {
                     "dataElement": {
-                        "id": "Zck0V9JZX2H"
+                        "id": "iWzcI326RiJ"
+                    },
+                    "dataSet": {
+                        "id": "bZmE2DR3XZe"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "UFQ1gDMMR29"
+                    },
+                    "dataSet": {
+                        "id": "bZmE2DR3XZe"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "sCOWKmNzyS7"
                     },
                     "dataSet": {
                         "id": "bZmE2DR3XZe"
@@ -31800,16 +31723,13 @@
                     "id": "iKVHhBPB5dQ"
                 },
                 {
-                    "id": "F11n0JaIemL"
-                },
-                {
                     "id": "n77SEOFtZ21"
                 },
                 {
-                    "id": "cFZFLrjzDNl"
+                    "id": "ZgyiAIAfbPD"
                 },
                 {
-                    "id": "ZgyiAIAfbPD"
+                    "id": "cFZFLrjzDNl"
                 },
                 {
                     "id": "vAeQFk9lsDw"
@@ -31836,10 +31756,10 @@
                     "id": "l00hDBTwR9j"
                 },
                 {
-                    "id": "UZSPpDNOjKS"
+                    "id": "pl1LkBE85j3"
                 },
                 {
-                    "id": "pl1LkBE85j3"
+                    "id": "UZSPpDNOjKS"
                 },
                 {
                     "id": "larL24UUEJx"
@@ -31854,40 +31774,34 @@
                     "id": "aetgl4zVVFz"
                 },
                 {
-                    "id": "YMLdMuqtyLj"
-                },
-                {
                     "id": "n8fx8jFAf5W"
-                },
-                {
-                    "id": "E05qCB34OFQ"
                 },
                 {
                     "id": "npUgUMlmwzG"
                 },
                 {
-                    "id": "yP1WiaojHhh"
+                    "id": "E05qCB34OFQ"
                 },
                 {
-                    "id": "eqpUxH0yrNf"
+                    "id": "yP1WiaojHhh"
                 },
                 {
                     "id": "TBj2fQF6nts"
                 },
                 {
-                    "id": "CRkQVbaV44U"
+                    "id": "eqpUxH0yrNf"
                 },
                 {
                     "id": "J4mzqqabrWn"
+                },
+                {
+                    "id": "CRkQVbaV44U"
                 },
                 {
                     "id": "JS3Gs9B8HAf"
                 },
                 {
                     "id": "E4fTxLAnM6V"
-                },
-                {
-                    "id": "yQtUCBin2dQ"
                 },
                 {
                     "id": "b4FzL9Vravu"
@@ -31908,9 +31822,6 @@
                     "id": "fjK4zGMl3w4"
                 },
                 {
-                    "id": "IhUUGuhJ1Ic"
-                },
-                {
                     "id": "Vah6zl6hzYT"
                 },
                 {
@@ -31923,10 +31834,10 @@
                     "id": "bRECuSQqMWV"
                 },
                 {
-                    "id": "IkqyAYuEjNO"
+                    "id": "Hd6ymZkyE69"
                 },
                 {
-                    "id": "Hd6ymZkyE69"
+                    "id": "IkqyAYuEjNO"
                 },
                 {
                     "id": "gUFJi0gkOlB"
@@ -31983,10 +31894,10 @@
                     "id": "CAuPwRE36VL"
                 },
                 {
-                    "id": "tAhP42xp6o8"
+                    "id": "I9bEgetKnOa"
                 },
                 {
-                    "id": "I9bEgetKnOa"
+                    "id": "tAhP42xp6o8"
                 },
                 {
                     "id": "dWhxTwNAOP9"
@@ -32005,9 +31916,6 @@
                 },
                 {
                     "id": "BvJjCEPMjfD"
-                },
-                {
-                    "id": "XRqgpWbq2Au"
                 },
                 {
                     "id": "aosHFdXtqjS"
@@ -32031,10 +31939,10 @@
                     "id": "PoMm4tr5nm2"
                 },
                 {
-                    "id": "apFSgxzVOa3"
+                    "id": "fQmtqJHehZY"
                 },
                 {
-                    "id": "fQmtqJHehZY"
+                    "id": "apFSgxzVOa3"
                 },
                 {
                     "id": "rWz2wIW86dM"
@@ -32061,10 +31969,10 @@
                     "id": "mG2M3DBq0Pq"
                 },
                 {
-                    "id": "TecHdSTmg1B"
+                    "id": "OUsCfUQVCsO"
                 },
                 {
-                    "id": "OUsCfUQVCsO"
+                    "id": "TecHdSTmg1B"
                 },
                 {
                     "id": "ZMmrAzLq8fi"
@@ -32073,16 +31981,16 @@
                     "id": "Ojzb0q8lF0L"
                 },
                 {
-                    "id": "qbDiX0P9ajG"
-                },
-                {
                     "id": "QvDeSxpuyWV"
                 },
                 {
-                    "id": "YKATxbvtvZC"
+                    "id": "qbDiX0P9ajG"
                 },
                 {
                     "id": "FpxU5oVMaN2"
+                },
+                {
+                    "id": "YKATxbvtvZC"
                 },
                 {
                     "id": "Bustw4kOrM5"
@@ -32091,16 +31999,16 @@
                     "id": "P2OFUy33mp5"
                 },
                 {
-                    "id": "Kp5X6juQ4Y0"
-                },
-                {
                     "id": "JPChT7HHiX8"
                 },
                 {
-                    "id": "rHC58mQeczR"
+                    "id": "Kp5X6juQ4Y0"
                 },
                 {
                     "id": "QI83as3PKgg"
+                },
+                {
+                    "id": "rHC58mQeczR"
                 },
                 {
                     "id": "QXE6ZKpgKuU"
@@ -32109,28 +32017,28 @@
                     "id": "jmyOOWtOpH5"
                 },
                 {
-                    "id": "L1KKJWeY6wT"
+                    "id": "pUsmbaGXKOO"
                 },
                 {
                     "id": "TOdXePtqgmq"
                 },
                 {
-                    "id": "pUsmbaGXKOO"
+                    "id": "L1KKJWeY6wT"
                 },
                 {
                     "id": "krK2EQvQd59"
                 },
                 {
-                    "id": "WDy3E4hDLuS"
+                    "id": "sBN0JHFexR2"
                 },
                 {
-                    "id": "vwD9zi7Ohbu"
+                    "id": "WDy3E4hDLuS"
                 },
                 {
                     "id": "W0TlfsnxE4a"
                 },
                 {
-                    "id": "sBN0JHFexR2"
+                    "id": "vwD9zi7Ohbu"
                 },
                 {
                     "id": "zv2JbswogFZ"
@@ -32148,13 +32056,10 @@
                     "id": "ZhlwXa6pGr0"
                 },
                 {
-                    "id": "HSSVlOK1ZsH"
-                },
-                {
                     "id": "UUhhKwqVugf"
                 },
                 {
-                    "id": "JWPhNfaxZKz"
+                    "id": "HSSVlOK1ZsH"
                 },
                 {
                     "id": "kz4yrfaHvLB"
@@ -32184,25 +32089,25 @@
                     "id": "I1pydYbcF4w"
                 },
                 {
-                    "id": "Y63NqbW4tOj"
-                },
-                {
                     "id": "yBXJC1hY2nU"
                 },
                 {
-                    "id": "ezUCxdxxrNs"
+                    "id": "Y63NqbW4tOj"
                 },
                 {
                     "id": "Bo9h0ScW1X3"
                 },
                 {
+                    "id": "ezUCxdxxrNs"
+                },
+                {
                     "id": "r2fyzTUyhrP"
                 },
                 {
-                    "id": "CyeFQNzOHPD"
+                    "id": "S9XqjBXQAUT"
                 },
                 {
-                    "id": "S9XqjBXQAUT"
+                    "id": "CyeFQNzOHPD"
                 },
                 {
                     "id": "Alqlv5UeKzX"
@@ -32881,43 +32786,6 @@
         {
             "annualized": false,
             "attributeValues": [],
-            "code": "HIV_TEST+",
-            "denominator": "1",
-            "denominatorDescription": "1",
-            "id": "F11n0JaIemL",
-            "indicatorType": {
-                "id": "kHy61PbChXr"
-            },
-            "legendSets": [],
-            "name": "HIV - HIV tests positive",
-            "numerator": "#{O6wdXKIZ5L2}",
-            "numeratorDescription": "HIV tests positive",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "HIV tests positive",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
             "code": "HIV_TB_TPT_REGIMEN_1HP",
             "denominator": "1",
             "denominatorDescription": "1",
@@ -32955,80 +32823,6 @@
         {
             "annualized": false,
             "attributeValues": [],
-            "code": "HIV_TB_TPT_REGIMEN_3RH",
-            "denominator": "1",
-            "denominatorDescription": "1",
-            "id": "YMLdMuqtyLj",
-            "indicatorType": {
-                "id": "kHy61PbChXr"
-            },
-            "legendSets": [],
-            "name": "HIV - HIV/TB: TB preventive treatment regimen: 3RH (three months of daily rifampicin plus isoniazid) ",
-            "numerator": "#{TjSu8QQduwE}",
-            "numeratorDescription": "TPT regimen: 3RH",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "TPT regimen: 3RH",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
-            "code": "HIV_TB_TPT_REGIMEN_4R",
-            "denominator": "1",
-            "denominatorDescription": "1",
-            "id": "IhUUGuhJ1Ic",
-            "indicatorType": {
-                "id": "kHy61PbChXr"
-            },
-            "legendSets": [],
-            "name": "HIV - HIV/TB: TB preventive treatment regimen: 4R (four months of daily rifampicin monotherapy) ",
-            "numerator": "#{atSnNyVmLlt}",
-            "numeratorDescription": "TPT regimen: 4R",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "TPT regimen: 4R",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
             "code": "HIV_TB_TPT_REGIMEN_6H",
             "denominator": "1",
             "denominatorDescription": "1",
@@ -33061,43 +32855,6 @@
                 "users": {}
             },
             "shortName": "TPT regimen: 6H",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
-            "code": "HIV_TB_TPT_REGIMEN_9H",
-            "denominator": "1",
-            "denominatorDescription": "1",
-            "id": "yQtUCBin2dQ",
-            "indicatorType": {
-                "id": "kHy61PbChXr"
-            },
-            "legendSets": [],
-            "name": "HIV - HIV/TB: TB preventive treatment regimen: 9H (nine months of daily isoniazid monotherapy) ",
-            "numerator": "#{d132ClRB69J}",
-            "numeratorDescription": "TPT regimen: 9H",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "TPT regimen: 9H",
             "translations": []
         },
         {
@@ -33246,6 +33003,47 @@
                 "users": {}
             },
             "shortName": "Key population: Trans and gender diverse people",
+            "translations": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
+            "code": "HIV_HTS4_LINKAGE_ART_PROP",
+            "denominator": "#{TDsHcpQ4E37}",
+            "denominatorDescription": "HIV - New HIV cases diagnosed",
+            "id": "kuxy66IEU61",
+            "indicatorType": {
+                "id": "hmSnCXmLYwt"
+            },
+            "legendSets": [
+                {
+                    "id": "aviopx5x4wQ"
+                }
+            ],
+            "name": "HIV - Linkage to ART amongst those newly diagnosed with HIV (%)",
+            "numerator": "#{r9RMOeS9qeH}",
+            "numeratorDescription": "HIV - Newly HIV + clients on ART",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UypOgnZ1aGF": {
+                        "access": "r-------",
+                        "id": "UypOgnZ1aGF"
+                    },
+                    "pm1eqD1fqwx": {
+                        "access": "rw------",
+                        "id": "pm1eqD1fqwx"
+                    },
+                    "tGZ42OQmFTX": {
+                        "access": "r-------",
+                        "id": "tGZ42OQmFTX"
+                    }
+                },
+                "users": {}
+            },
+            "shortName": "Linkage to ART",
             "translations": []
         },
         {
@@ -33764,6 +33562,43 @@
                 "users": {}
             },
             "shortName": "PLHIV new ART screened positive for TB (%)",
+            "translations": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
+            "code": "HIV_TB_PLHIV_NEW_ART_SCREENED_TB_PROP",
+            "denominator": "#{r9RMOeS9qeH}",
+            "denominatorDescription": "Newly HIV + clients on ART (M)",
+            "id": "aosHFdXtqjS",
+            "indicatorType": {
+                "id": "hmSnCXmLYwt"
+            },
+            "legendSets": [],
+            "name": "HIV - PLHIV newly initiated on ART screened for TB (%)",
+            "numerator": "#{OZqNwQMt3AY}",
+            "numeratorDescription": "PLHIV new ART screened for TB",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UypOgnZ1aGF": {
+                        "access": "r-------",
+                        "id": "UypOgnZ1aGF"
+                    },
+                    "pm1eqD1fqwx": {
+                        "access": "rw------",
+                        "id": "pm1eqD1fqwx"
+                    },
+                    "tGZ42OQmFTX": {
+                        "access": "r-------",
+                        "id": "tGZ42OQmFTX"
+                    }
+                },
+                "users": {}
+            },
+            "shortName": "PLHIV newly initiated on ART screened for TB (%)",
             "translations": []
         },
         {
@@ -34434,6 +34269,43 @@
                 "users": {}
             },
             "shortName": "PLHIV: Presence of STI syndrome (%)",
+            "translations": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
+            "code": "HIV_PLHIV_SYPHILIS_TREATMENT_COVERAGE_PROP",
+            "denominator": "#{okqODe4AL4C}",
+            "denominatorDescription": "Clients tested positive for syphilis",
+            "id": "VQI2kUzhoBS",
+            "indicatorType": {
+                "id": "hmSnCXmLYwt"
+            },
+            "legendSets": [],
+            "name": "HIV - STI PLHIV: Syphilis treatment coverage (%)",
+            "numerator": "#{KvhL6lXpa1P}",
+            "numeratorDescription": "PLHIV treated for syphilis",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UypOgnZ1aGF": {
+                        "access": "r-------",
+                        "id": "UypOgnZ1aGF"
+                    },
+                    "pm1eqD1fqwx": {
+                        "access": "rw------",
+                        "id": "pm1eqD1fqwx"
+                    },
+                    "tGZ42OQmFTX": {
+                        "access": "r-------",
+                        "id": "tGZ42OQmFTX"
+                    }
+                },
+                "users": {}
+            },
+            "shortName": "PLHIV: Syphilis treatment coverage (%)",
             "translations": []
         },
         {
@@ -35142,6 +35014,43 @@
         {
             "annualized": false,
             "attributeValues": [],
+            "code": "HIV_VH_PLHIV_COMPL_TX_HCV_SUSTAINED_VIR_RESP_PROP",
+            "denominator": "#{EKCrnVE18Zd}",
+            "denominatorDescription": "PLHIV end treat HCV asses for sust vir resp",
+            "id": "zYy8uOdvTFt",
+            "indicatorType": {
+                "id": "hmSnCXmLYwt"
+            },
+            "legendSets": [],
+            "name": "HIV - Viral hepatitis: PLHIV completed HCV treatment who have sustained virological response (%)",
+            "numerator": "#{hCfO0OUnF6L}",
+            "numeratorDescription": "PLHIV end HCV tx sustained virological response",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UypOgnZ1aGF": {
+                        "access": "r-------",
+                        "id": "UypOgnZ1aGF"
+                    },
+                    "pm1eqD1fqwx": {
+                        "access": "rw------",
+                        "id": "pm1eqD1fqwx"
+                    },
+                    "tGZ42OQmFTX": {
+                        "access": "r-------",
+                        "id": "tGZ42OQmFTX"
+                    }
+                },
+                "users": {}
+            },
+            "shortName": "PLHIV completed HCV tx & sustained vir resp",
+            "translations": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
             "code": "HIV_PLHIV_VL_SUPPRESSION_DSD_ART_PROP",
             "denominator": "#{HyX6JJcspiC}",
             "denominatorDescription": "PLHIV enrolled in DSD ART models tested for VL",
@@ -35664,80 +35573,6 @@
         {
             "annualized": false,
             "attributeValues": [],
-            "code": "HIV_HTS2_POSITIVITY_PROP",
-            "denominator": "#{sX7pWYXIVIi}",
-            "denominatorDescription": "HIV - HIV tests performed",
-            "id": "JWPhNfaxZKz",
-            "indicatorType": {
-                "id": "hmSnCXmLYwt"
-            },
-            "legendSets": [],
-            "name": "HIV - HIV test positivity (%)",
-            "numerator": "#{O6wdXKIZ5L2}",
-            "numeratorDescription": "HIV - HIV tests positive",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "HIV test positivity",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
-            "code": "HIV_TEST",
-            "denominator": "1",
-            "denominatorDescription": "1",
-            "id": "XRqgpWbq2Au",
-            "indicatorType": {
-                "id": "kHy61PbChXr"
-            },
-            "legendSets": [],
-            "name": "HIV - HIV tests performed",
-            "numerator": "#{sX7pWYXIVIi}",
-            "numeratorDescription": "HIV tests performed",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "HIV tests performed",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
             "code": "HIV_HIVTX_STOCKOUT_DAYS",
             "denominator": "1",
             "denominatorDescription": "1",
@@ -36070,47 +35905,6 @@
                 "users": {}
             },
             "shortName": "Late ART initiation (%)",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
-            "code": "HIV_HTS4_LINKAGE_ART_PROP",
-            "denominator": "#{TDsHcpQ4E37}",
-            "denominatorDescription": "HIV - New HIV cases diagnosed",
-            "id": "kuxy66IEU61",
-            "indicatorType": {
-                "id": "hmSnCXmLYwt"
-            },
-            "legendSets": [
-                {
-                    "id": "aviopx5x4wQ"
-                }
-            ],
-            "name": "HIV - Linkage to ART amongst those newly diagnosed with HIV (%)",
-            "numerator": "#{r9RMOeS9qeH}",
-            "numeratorDescription": "HIV - Newly HIV + clients on ART",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "Linkage to ART",
             "translations": []
         },
         {
@@ -36481,43 +36275,6 @@
                 "users": {}
             },
             "shortName": "PLHIV new ART screened positive for TB",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
-            "code": "HIV_TB_PLHIV_NEW_ART_SCREENED_TB_PROP",
-            "denominator": "#{r9RMOeS9qeH}",
-            "denominatorDescription": "Newly HIV + clients on ART (M)",
-            "id": "aosHFdXtqjS",
-            "indicatorType": {
-                "id": "hmSnCXmLYwt"
-            },
-            "legendSets": [],
-            "name": "HIV - PLHIV newly initiated on ART screened for TB (%)",
-            "numerator": "#{OZqNwQMt3AY}",
-            "numeratorDescription": "PLHIV new ART screened for TB",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "PLHIV newly initiated on ART screened for TB (%)",
             "translations": []
         },
         {
@@ -37081,43 +36838,6 @@
                 "users": {}
             },
             "shortName": "PLHIV: Syphilis test positivity (%) (M)",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
-            "code": "HIV_PLHIV_SYPHILIS_TREATMENT_COVERAGE_PROP",
-            "denominator": "#{okqODe4AL4C}",
-            "denominatorDescription": "Clients tested positive for syphilis",
-            "id": "VQI2kUzhoBS",
-            "indicatorType": {
-                "id": "hmSnCXmLYwt"
-            },
-            "legendSets": [],
-            "name": "HIV - STI PLHIV: Syphilis treatment coverage (%)",
-            "numerator": "#{KvhL6lXpa1P}",
-            "numeratorDescription": "PLHIV treated for syphilis",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "PLHIV: Syphilis treatment coverage (%)",
             "translations": []
         },
         {
@@ -37715,43 +37435,6 @@
         {
             "annualized": false,
             "attributeValues": [],
-            "code": "HIV_VH_PLHIV_COMPL_TX_HCV_SUSTAINED_VIR_RESP_PROP",
-            "denominator": "#{EKCrnVE18Zd}",
-            "denominatorDescription": "PLHIV end treat HCV asses for sust vir resp",
-            "id": "zYy8uOdvTFt",
-            "indicatorType": {
-                "id": "hmSnCXmLYwt"
-            },
-            "legendSets": [],
-            "name": "HIV - Viral hepatitis: PLHIV completed HCV treatment who have sustained virological response (%)",
-            "numerator": "#{hCfO0OUnF6L}",
-            "numeratorDescription": "PLHIV end HCV tx sustained virological response",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "PLHIV completed HCV tx & sustained vir resp",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
             "code": "HIV_VH_PLHIV_STARTING_HBV_PROP",
             "denominator": "#{HtxoT1mH09t}",
             "denominatorDescription": "PLHIV tested positive for HBsAG",
@@ -38052,6 +37735,44 @@
         {
             "annualized": false,
             "attributeValues": [],
+            "code": "HIV_CS_CCA2_PRE_INVASIVE_CERVICAL_DISEASE_TX_PROP",
+            "denominator": "I{YbiM3eIQCdI}",
+            "denominatorDescription": "WLHIV positive pre-invasive cervical disease",
+            "description": "Proportion of women living with HIV who screened positive for pre-invasive cervical disease and received treatment for it",
+            "id": "i2LYPcqurin",
+            "indicatorType": {
+                "id": "hmSnCXmLYwt"
+            },
+            "legendSets": [],
+            "name": "HIV CS - CCa.2 Pre-invasive cervical disease treatment (%)",
+            "numerator": "I{e6sHrKMIHoH}",
+            "numeratorDescription": "WLHIV positive pre-invasive cervical receiving tx",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UypOgnZ1aGF": {
+                        "access": "r-------",
+                        "id": "UypOgnZ1aGF"
+                    },
+                    "pm1eqD1fqwx": {
+                        "access": "rw------",
+                        "id": "pm1eqD1fqwx"
+                    },
+                    "tGZ42OQmFTX": {
+                        "access": "r-------",
+                        "id": "tGZ42OQmFTX"
+                    }
+                },
+                "users": {}
+            },
+            "shortName": "CCa.2 Pre-invasive cervical disease treatment",
+            "translations": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
             "code": "HIV_CS_DFT3_TB_TESTING_SYMPTOMS_POS_PROP",
             "denominator": "I{VViHpcPnQPm}",
             "denominatorDescription": "PLHIV newly initiated on ART screened pos TB symp",
@@ -38085,6 +37806,44 @@
                 "users": {}
             },
             "shortName": "DFT.3 TB testing among those symptom pos",
+            "translations": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
+            "code": "HIV_CS_DSD1_MULTI_MONTH_ARV_DISP_MORE_5_M_PROP",
+            "denominator": "I{sgSyf8CKyR5}",
+            "denominatorDescription": "PLHIV currently on ART",
+            "description": "Proportion of people living with HIV and On ART who are receiving multi-month dispensing of ARV medicine during the reporting period",
+            "id": "hjYTihFMU2n",
+            "indicatorType": {
+                "id": "hmSnCXmLYwt"
+            },
+            "legendSets": [],
+            "name": "HIV CS - DSD.1 Multi-month ARV dispensing (> 5 months) (%)",
+            "numerator": "I{WulhNjNLpoQ}",
+            "numeratorDescription": "PLHIV on ART receive more 5 ARV M last pick-up",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UypOgnZ1aGF": {
+                        "access": "r-------",
+                        "id": "UypOgnZ1aGF"
+                    },
+                    "pm1eqD1fqwx": {
+                        "access": "rw------",
+                        "id": "pm1eqD1fqwx"
+                    },
+                    "tGZ42OQmFTX": {
+                        "access": "r-------",
+                        "id": "tGZ42OQmFTX"
+                    }
+                },
+                "users": {}
+            },
+            "shortName": "DSD.1 Multi-month ARV dispensing (>5 months)",
             "translations": []
         },
         {
@@ -38166,6 +37925,120 @@
         {
             "annualized": false,
             "attributeValues": [],
+            "code": "HIV_CS_HEP5_HBV_TREATMENT_PROP",
+            "denominator": "I{B1BOqt3v55q}",
+            "denominatorDescription": "PLHIV diagnosed with HBV",
+            "description": "Proportion of people living with HIV and diagnosed with HBV infection who are on TDF-based ART",
+            "id": "toEOjhg6GF0",
+            "indicatorType": {
+                "id": "hmSnCXmLYwt"
+            },
+            "legendSets": [],
+            "name": "HIV CS - HEP.5 HBV treatment among people living with HIV (%)",
+            "numerator": "I{Xpl1NsNZiQs}",
+            "numeratorDescription": "PLHIV on HBV treatment",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UypOgnZ1aGF": {
+                        "access": "r-------",
+                        "id": "UypOgnZ1aGF"
+                    },
+                    "pm1eqD1fqwx": {
+                        "access": "rw------",
+                        "id": "pm1eqD1fqwx"
+                    },
+                    "tGZ42OQmFTX": {
+                        "access": "r-------",
+                        "id": "tGZ42OQmFTX"
+                    }
+                },
+                "users": {}
+            },
+            "shortName": "HEP.5 HBV treatment among people living with HIV",
+            "translations": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
+            "code": "HIV_CS_INC1_HIV_CS_INCIDENCE_PROP_CS",
+            "denominator": "#{k4CZoD6FRDn}",
+            "denominatorDescription": "Population estimation: Uninfected",
+            "description": "Estimated number of people newly infected with HIV per 1000 uninfected population",
+            "id": "Gd8CA3FYysg",
+            "indicatorType": {
+                "id": "zpa0vUC7IWd"
+            },
+            "legendSets": [],
+            "name": "HIV CS - INC.1 HIV incidence (/1000 uninfected population) (CS)",
+            "numerator": "I{tUkytCarojr}",
+            "numeratorDescription": "Newly diagnosed with HIV",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UypOgnZ1aGF": {
+                        "access": "r-------",
+                        "id": "UypOgnZ1aGF"
+                    },
+                    "pm1eqD1fqwx": {
+                        "access": "rw------",
+                        "id": "pm1eqD1fqwx"
+                    },
+                    "tGZ42OQmFTX": {
+                        "access": "r-------",
+                        "id": "tGZ42OQmFTX"
+                    }
+                },
+                "users": {}
+            },
+            "shortName": "INC.1 HIV incidence (/1000 uninfected) (CS)",
+            "translations": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
+            "code": "HIV_CS_MOR1_AIDS_MORTALITY_100000_POP",
+            "denominator": "#{DkmMEcubiPv}",
+            "denominatorDescription": "GEN - Population",
+            "description": "Total number of people who have died from AIDS-related causes per 100 000 population",
+            "id": "nqHUMotwjZl",
+            "indicatorType": {
+                "id": "BY11PjGMCg2"
+            },
+            "legendSets": [],
+            "name": "HIV CS - MOR.1 AIDS-related mortality (/100000 population)",
+            "numerator": "I{GzPV0aucKsL}",
+            "numeratorDescription": "HIV patient death",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UypOgnZ1aGF": {
+                        "access": "r-------",
+                        "id": "UypOgnZ1aGF"
+                    },
+                    "pm1eqD1fqwx": {
+                        "access": "rw------",
+                        "id": "pm1eqD1fqwx"
+                    },
+                    "tGZ42OQmFTX": {
+                        "access": "r-------",
+                        "id": "tGZ42OQmFTX"
+                    }
+                },
+                "users": {}
+            },
+            "shortName": "MOR.1 AIDS-related mortality (/100000 population)",
+            "translations": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
             "code": "HIV_CS_PMTCT_INFANT_ARV_PROPHYLAXIS_COVERAGE",
             "denominator": "#{CCr5r94bUsb}",
             "denominatorDescription": "PMTCT: HIV+ women delivered in the last 12 months",
@@ -38236,6 +38109,44 @@
                 "users": {}
             },
             "shortName": "STI.5 gonorrhoea test positivity",
+            "translations": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
+            "code": "HIV_CS_VER3_INFANT_ARV_PROPH_COVERAGE_PROG_PROP",
+            "denominator": "I{FVwozdQAi1z}",
+            "denominatorDescription": "HIV positive women delivered in the last 12 months",
+            "description": "Proportion of HIV-exposed infants who initiated ARV prophylaxis",
+            "id": "Nk7aJpOf9HP",
+            "indicatorType": {
+                "id": "hmSnCXmLYwt"
+            },
+            "legendSets": [],
+            "name": "HIV CS - VER.3 Infant ARV prophylaxis coverage (Programme/service provider level) (%)",
+            "numerator": "I{x7G9iZJtTnT}",
+            "numeratorDescription": "HIV_exp infant start ARV prophylaxis at birth",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UypOgnZ1aGF": {
+                        "access": "r-------",
+                        "id": "UypOgnZ1aGF"
+                    },
+                    "pm1eqD1fqwx": {
+                        "access": "rw------",
+                        "id": "pm1eqD1fqwx"
+                    },
+                    "tGZ42OQmFTX": {
+                        "access": "r-------",
+                        "id": "tGZ42OQmFTX"
+                    }
+                },
+                "users": {}
+            },
+            "shortName": "VER.3 Infant ARV prophylaxis cov (Programme level)",
             "translations": []
         },
         {
@@ -38690,44 +38601,6 @@
         {
             "annualized": false,
             "attributeValues": [],
-            "code": "HIV_CS_CCA2_PRE_INVASIVE_CERVICAL_DISEASE_TX_PROP",
-            "denominator": "I{YbiM3eIQCdI}",
-            "denominatorDescription": "WLHIV positive pre-invasive cervical disease",
-            "description": "Proportion of women living with HIV who screened positive for pre-invasive cervical disease and received treatment for it",
-            "id": "i2LYPcqurin",
-            "indicatorType": {
-                "id": "hmSnCXmLYwt"
-            },
-            "legendSets": [],
-            "name": "HIV CS - CCa.2 Pre-invasive cervical disease treatment (%)",
-            "numerator": "I{e6sHrKMIHoH}",
-            "numeratorDescription": "WLHIV positive pre-invasive cervical receiving tx",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "CCa.2 Pre-invasive cervical disease treatment",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
             "code": "HIV_CS_CCA3_INVASIV_CERVICAL_CANCER_TREATMENT_PROP",
             "denominator": "I{mmtODUnsrAc}",
             "denominatorDescription": "WLHIV diagnosed with invasive cervical cancer",
@@ -38994,44 +38867,6 @@
         {
             "annualized": false,
             "attributeValues": [],
-            "code": "HIV_CS_DSD1_MULTI_MONTH_ARV_DISP_MORE_5_M_PROP",
-            "denominator": "I{sgSyf8CKyR5}",
-            "denominatorDescription": "PLHIV currently on ART",
-            "description": "Proportion of people living with HIV and On ART who are receiving multi-month dispensing of ARV medicine during the reporting period",
-            "id": "hjYTihFMU2n",
-            "indicatorType": {
-                "id": "hmSnCXmLYwt"
-            },
-            "legendSets": [],
-            "name": "HIV CS - DSD.1 Multi-month ARV dispensing (> 5 months) (%)",
-            "numerator": "I{WulhNjNLpoQ}",
-            "numeratorDescription": "PLHIV on ART receive more 5 ARV M last pick-up",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "DSD.1 Multi-month ARV dispensing (>5 months)",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
             "code": "HIV_CS_DSD1_MULTI_MONTH_ARV_DISP_MORE_6_M_PROP",
             "denominator": "I{sgSyf8CKyR5}",
             "denominatorDescription": "PLHIV currently on ART",
@@ -39293,44 +39128,6 @@
                 "users": {}
             },
             "shortName": "HEP.4 HCV positivity",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
-            "code": "HIV_CS_HEP5_HBV_TREATMENT_PROP",
-            "denominator": "I{B1BOqt3v55q}",
-            "denominatorDescription": "PLHIV diagnosed with HBV",
-            "description": "Proportion of people living with HIV and diagnosed with HBV infection who are on TDF-based ART",
-            "id": "toEOjhg6GF0",
-            "indicatorType": {
-                "id": "hmSnCXmLYwt"
-            },
-            "legendSets": [],
-            "name": "HIV CS - HEP.5 HBV treatment among people living with HIV (%)",
-            "numerator": "I{Xpl1NsNZiQs}",
-            "numeratorDescription": "PLHIV on HBV treatment",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "HEP.5 HBV treatment among people living with HIV",
             "translations": []
         },
         {
@@ -39610,82 +39407,6 @@
                     "value": "Initié sous TAR cette période"
                 }
             ]
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
-            "code": "HIV_CS_INC1_HIV_CS_INCIDENCE_PROP_CS",
-            "denominator": "#{k4CZoD6FRDn}",
-            "denominatorDescription": "Population estimation: Uninfected",
-            "description": "Estimated number of people newly infected with HIV per 1000 uninfected population",
-            "id": "Gd8CA3FYysg",
-            "indicatorType": {
-                "id": "zpa0vUC7IWd"
-            },
-            "legendSets": [],
-            "name": "HIV CS - INC.1 HIV incidence (/1000 uninfected population) (CS)",
-            "numerator": "I{tUkytCarojr}",
-            "numeratorDescription": "Newly diagnosed with HIV",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "INC.1 HIV incidence (/1000 uninfected) (CS)",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
-            "code": "HIV_CS_MOR1_AIDS_MORTALITY_100000_POP",
-            "denominator": "#{DkmMEcubiPv}",
-            "denominatorDescription": "GEN - Population",
-            "description": "Total number of people who have died from AIDS-related causes per 100 000 population",
-            "id": "nqHUMotwjZl",
-            "indicatorType": {
-                "id": "BY11PjGMCg2"
-            },
-            "legendSets": [],
-            "name": "HIV CS - MOR.1 AIDS-related mortality (/100000 population)",
-            "numerator": "I{GzPV0aucKsL}",
-            "numeratorDescription": "HIV patient death",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "MOR.1 AIDS-related mortality (/100000 population)",
-            "translations": []
         },
         {
             "annualized": false,
@@ -40306,44 +40027,6 @@
         {
             "annualized": false,
             "attributeValues": [],
-            "code": "HIV_CS_VER3_INFANT_ARV_PROPH_COVERAGE_PROG_PROP",
-            "denominator": "I{FVwozdQAi1z}",
-            "denominatorDescription": "HIV positive women delivered in the last 12 months",
-            "description": "Proportion of HIV-exposed infants who initiated ARV prophylaxis",
-            "id": "Nk7aJpOf9HP",
-            "indicatorType": {
-                "id": "hmSnCXmLYwt"
-            },
-            "legendSets": [],
-            "name": "HIV CS - VER.3 Infant ARV prophylaxis coverage (Programme/service provider level) (%)",
-            "numerator": "I{x7G9iZJtTnT}",
-            "numeratorDescription": "HIV_exp infant start ARV prophylaxis at birth",
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "UypOgnZ1aGF": {
-                        "access": "r-------",
-                        "id": "UypOgnZ1aGF"
-                    },
-                    "pm1eqD1fqwx": {
-                        "access": "rw------",
-                        "id": "pm1eqD1fqwx"
-                    },
-                    "tGZ42OQmFTX": {
-                        "access": "r-------",
-                        "id": "tGZ42OQmFTX"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "VER.3 Infant ARV prophylaxis cov (Programme level)",
-            "translations": []
-        },
-        {
-            "annualized": false,
-            "attributeValues": [],
             "code": "HIV_CS_VER4_ART_COVERAGE_POP_PROP",
             "denominator": "#{VbPMQ21t8QT}",
             "denominatorDescription": "Population estimation: HIV-positive women who delivered",
@@ -40529,6 +40212,117 @@
                 "users": {}
             },
             "shortName": "VER.7  HIV prevalence among women attending ANC",
+            "translations": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
+            "code": "HIV_TB_TPT_REGIMEN_3RH",
+            "denominator": "1",
+            "denominatorDescription": "1",
+            "id": "YMLdMuqtyLj",
+            "indicatorType": {
+                "id": "kHy61PbChXr"
+            },
+            "legendSets": [],
+            "name": "HIV - HIV/TB: TB preventive treatment regimen: 3RH (three months of daily rifampicin plus isoniazid) ",
+            "numerator": "#{TjSu8QQduwE}",
+            "numeratorDescription": "TPT regimen: 3RH",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UypOgnZ1aGF": {
+                        "access": "r-------",
+                        "id": "UypOgnZ1aGF"
+                    },
+                    "pm1eqD1fqwx": {
+                        "access": "rw------",
+                        "id": "pm1eqD1fqwx"
+                    },
+                    "tGZ42OQmFTX": {
+                        "access": "r-------",
+                        "id": "tGZ42OQmFTX"
+                    }
+                },
+                "users": {}
+            },
+            "shortName": "TPT regimen: 3RH",
+            "translations": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
+            "code": "HIV_TB_TPT_REGIMEN_4R",
+            "denominator": "1",
+            "denominatorDescription": "1",
+            "id": "IhUUGuhJ1Ic",
+            "indicatorType": {
+                "id": "kHy61PbChXr"
+            },
+            "legendSets": [],
+            "name": "HIV - HIV/TB: TB preventive treatment regimen: 4R (four months of daily rifampicin monotherapy) ",
+            "numerator": "#{atSnNyVmLlt}",
+            "numeratorDescription": "TPT regimen: 4R",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UypOgnZ1aGF": {
+                        "access": "r-------",
+                        "id": "UypOgnZ1aGF"
+                    },
+                    "pm1eqD1fqwx": {
+                        "access": "rw------",
+                        "id": "pm1eqD1fqwx"
+                    },
+                    "tGZ42OQmFTX": {
+                        "access": "r-------",
+                        "id": "tGZ42OQmFTX"
+                    }
+                },
+                "users": {}
+            },
+            "shortName": "TPT regimen: 4R",
+            "translations": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
+            "code": "HIV_TB_TPT_REGIMEN_9H",
+            "denominator": "1",
+            "denominatorDescription": "1",
+            "id": "yQtUCBin2dQ",
+            "indicatorType": {
+                "id": "kHy61PbChXr"
+            },
+            "legendSets": [],
+            "name": "HIV - HIV/TB: TB preventive treatment regimen: 9H (nine months of daily isoniazid monotherapy) ",
+            "numerator": "#{d132ClRB69J}",
+            "numeratorDescription": "TPT regimen: 9H",
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UypOgnZ1aGF": {
+                        "access": "r-------",
+                        "id": "UypOgnZ1aGF"
+                    },
+                    "pm1eqD1fqwx": {
+                        "access": "rw------",
+                        "id": "pm1eqD1fqwx"
+                    },
+                    "tGZ42OQmFTX": {
+                        "access": "r-------",
+                        "id": "tGZ42OQmFTX"
+                    }
+                },
+                "users": {}
+            },
+            "shortName": "TPT regimen: 9H",
             "translations": []
         },
         {
@@ -56245,7 +56039,7 @@
         "description": "HIV Case Surveillance",
         "healthAreaCode": "HIV",
         "healthAreaName": "HIV",
-        "lastUpdated": "20231207T113157",
+        "lastUpdated": "20231207T115504",
         "locale": "en",
         "name": "HIV_CS_TRK_DHIS2.40.2-en",
         "type": "TRK",
