@@ -63,7 +63,7 @@ The DHIS2 HIV Case Surveillance configuration is structured in three major compo
 
 These modular components are designed based on the heterogeneous nature of HIV data systems in countries and support the typical architecture for implementing case-based data systems alongside integrated national HMIS infrastructure: 
 
-![HIV illustrative architecture](/resources/images/hiv_architecture_simple.jpg)
+![HIV illustrative architecture](/resources/images/hiv_architecture_simple.png)
 
 ## Tracker
 
@@ -71,7 +71,7 @@ These modular components are designed based on the heterogeneous nature of HIV d
 
 The tracker program structure is as follows:
 
-![Case Surveillance tracker structure](/resources/images/case_surveillance_program_structure.jpg)
+![Case Surveillance tracker structure](/resources/images/case_surveillance_program_structure.png)
 
 | **Stage**           | **Description**                                              |
 | ------------------- | ------------------------------------------------------------ |
