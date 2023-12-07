@@ -7,6 +7,7 @@
 ## Design
 
 [Version 2.0.0](#hiv-cs-design)
+[HIV Case Surveillance Dashboards and Datasets](#hiv-cs-dashboards-datasets)
 
 ## Installation
 
