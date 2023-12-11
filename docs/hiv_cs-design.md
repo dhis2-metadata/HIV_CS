@@ -63,7 +63,7 @@ The DHIS2 HIV Case Surveillance configuration is structured in three major compo
 
 These modular components are designed based on the heterogeneous nature of HIV data systems in countries and support the typical architecture for implementing case-based data systems alongside integrated national HMIS infrastructure: 
 
-![HIV illustrative architecture](/resources/images/hiv_architecture_simple.png)
+![HIV illustrative architecture](resources/images/hiv_architecture_simple.png)
 
 ## Tracker
 
@@ -71,7 +71,7 @@ These modular components are designed based on the heterogeneous nature of HIV d
 
 The tracker program structure is as follows:
 
-![Case Surveillance tracker structure](/resources/images/case_surveillance_program_structure.png)
+![Case Surveillance tracker structure](resources/images/case_surveillance_program_structure.png)
 
 | **Stage**           | **Description**                                              |
 | ------------------- | ------------------------------------------------------------ |
@@ -99,7 +99,7 @@ The **date of birth and age** can be assigned in two different ways:
 
 Once done, a 'probable' age of birth is assigned to the Date of birth based on the value entered either on the years or month TEA.
 
-![Date of Birth](/resources/images/date_of_birth_unknown.gif)
+![Date of Birth](resources/images/date_of_birth_unknown.gif)
 
 >**Note:**
 >
@@ -117,7 +117,7 @@ Concerning the key population information we recommend implementations to refer 
 
 Details of the HIV diagnosis and key population data is collected as a program stage in order to further protect the sensitive nature of this data. Specifically, by including this data only in the program stage, it is not accessible for searching a TEI – where users may have broader access to search for clients. 
 
-In some implementations, instead of having the different key population groups listed as selectable categories, a set of questions has been proposed and according to the answer a key population identification is assigned to the clients. [See the section Implementation Considerations & Local Adaptation in this document](https://docs.google.com/document/d/1h7KBCLA99jVoTmDTBttIiSk4SKKD7tcIw7yq5A3yH68/edit#heading=h.7690t3h1dai8).
+In some implementations, instead of having the different key population groups listed as selectable categories, a set of questions has been proposed and according to the answer a key population identification is assigned to the clients. *See the section Implementation Considerations & Local Adaptation*.
 
 For an individual enrolled in an HIV Case Surveillance program, it is possible that their association with a key population group may change over time, as an individual’s risk of HIV acquisition, participation in high risk behaviours, and HIV prevention needs vary over time. The program stage is intentionally designed as non-repeatable to allow optimised analytics based on the key population group. However, a user may revisit this stage and modify the key population groups as needed.
 
@@ -447,9 +447,10 @@ Program indicators are organized into two program indicator groups:
 
 #### Key population filter in program indicators
 
-As described in the section on [Hidden Data Elements & Assigned Values](#Hidden-Data-Elements-&-Assigned-Values-to-Data-Elements), program rules are used to assign and copy the TEI’s key population group recorded in the initial case report to a hidden data element field on the repeatable Visit program stage. This allows for all program indicator calculations based on key population group to be configured, namely by using the auto-assigned data element as a filter in the program indicator. 
+As described in the section on *Hidden Data Elements & Assigned Values*, program rules are used to assign and copy the TEI’s key population group recorded in the initial case report to a hidden data element field on the repeatable Visit program stage. This allows for all program indicator calculations based on key population group to be configured, namely by using the auto-assigned data element as a filter in the program indicator. 
 
-Note that in adjusting program indicators that filter based on Key Population group, you must use the set of data elements containing the postfix “- VISIT”. 
+Note that in adjusting program indicators that filter based on Key Population group, you must use the set of data elements containing the postfix “- VISIT”:
+
 - HIV - Key population - Men who have sex with men - VISITS [kXutCUTOxcq]
 - HIV - Key population - Person who inject drugs - VISITS [GSSOfwzb0DQ]
 - HIV - Key population - People living in prisons and other closed settings - VISITS [iqXxZbRDhYG]
