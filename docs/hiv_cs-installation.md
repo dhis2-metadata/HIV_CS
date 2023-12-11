@@ -1,6 +1,6 @@
 # HIV Case Surveillance Tracker Installation Guide { #hiv-cs-installation }
 
-Package Version 1.0.0
+Package Version 2.0.0
 
 System default language: English
 
