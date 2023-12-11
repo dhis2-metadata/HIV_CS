@@ -18,7 +18,7 @@ Components included as part of this package:
 - Datasets used for population of dashboards (all dashboards are aggregate based)
 - Data exhchange mapping 
 
-All the changes are highlighted on the [Diff file](resources/files/diff_hiv_cs.xlsx)
+All the changes are highlighted on the [Diff file](resources/files/HIV_CS_DIFF_1.0_2.0.xlsx)
 
 ## 1.0.0
 
