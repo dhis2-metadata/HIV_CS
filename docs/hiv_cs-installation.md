@@ -57,6 +57,9 @@ Indicator type is another type of object that can create import conflict because
 | Object     | UID         | API endpoint                                                             |
 |:-----------|:------------|:-------------------------------------------------------------------------|
 | Percentage | hmSnCXmLYwt | `../api/indicatorTypes.json?filter=number:eq:false&filter=factor:eq:100` |
+| Rate (factor=1)| k4RGC3sMTzO | `../api/indicatorTypes.json?filter=number:eq:false&filter=factor:eq:1`|
+| Per 10 000 | FWTvArgP0jt | `../api/indicatorTypes.json?filter=number:eq:false&filter=factor:eq:10000`|
+| Numerator only (number) | kHy61PbChXr | `..api/indicatorTypes.json?filter=number:eq:true`|
 
 ### Tracked Entity Type
 
@@ -90,7 +93,7 @@ If the "dry run"/"validate" import works without error, attempt to import the me
 
 ### Handling import conflicts
 
-NOTE: If you are importing into a new DHIS2 instance, you will not have to worry about import conflicts, as there is nothing in the database you are importing to conflict with. Follow the instructions to import the metadata then please proceed to the “[Configuration](#configuration)” section.
+> NOTE: If you are importing into a new DHIS2 instance, you will not have to worry about import conflicts, as there is nothing in the database you are importing to conflict with. Follow the instructions to import the metadata then please proceed to the “[Configuration](#configuration)” section.
 
 There are a number of different conflicts that may occur, though the most common is that there are metadata objects in the configuration package with a name, shortname and/or code that already exists in the target database. There are a couple of alternative solutions to these problems, with different advantages and disadvantages. Which one is more appropriate will depend, for example, on the type of object for which a conflict occurs.
 
@@ -135,7 +138,7 @@ By default, the following is assigned to these user groups
 
 | Object              | User Groups                             |                                                  |                                                     |
 |---------------------|-----------------------------------------|--------------------------------------------------|-----------------------------------------------------|
-|                     | HIV PREV - Access                       | HIV PREV - Admin                                 | HIV PREV - Data capture                             |
+|                     | HIV CS - Access                         | HIV CS - Admin                                   | HIV CS - Data capture                               |
 | Tracked entity type | Metadata : can view <br> Data: can view | Metadata : can edit and view <br> Data: can view | Metadata : can view <br> Data: can capture and view |
 | Program             | Metadata : can view <br> Data: can view | Metadata : can edit and view <br> Data: can view | Metadata : can view <br> Data: can capture and view |
 | Program Stages      | Metadata : can view <br> Data: can view | Metadata : can edit and view <br> Data: can view | Metadata : can view <br> Data: can capture and view |
@@ -164,46 +167,6 @@ You must assign the program to organisation units within your own hierarchy in o
 > If you are using any third party applications that rely on the current metadata, please take into account that this update could break them”
 
 Even when metadata has been successfully imported without any import conflicts, there can be duplicates in the metadata - data elements, tracked entity attributes or option sets that already exist. As was noted in the section above on resolving conflict, an important issue to keep in mind is that decisions on making changes to the metadata in DHIS2 also needs to take into account other documents and resources that are in different ways associated with both the existing metadata, and the metadata that has been imported through the configuration package. Resolving duplicates is thus not only a matter of "cleaning up the database", but also making sure that this is done without, for example, breaking potential integrating with other systems, the possibility to use training material, breaking SOPs etc. This will very much be context-dependent.
-
-#### Data entry forms
-
-* After registering the first (test) case, access the **Settings** menu in the tracker capture form and select **Show/Hide Widgets**
-* Switch from **Timeline Data Entry** to **Tabular Data Entry**
-* Make sure that **Enrollment**, **Feedback** and **Profile** widgets are selected. Click **Close**.
-
-#### Top Bar
-
-* Access the **Settings** menu and select **Top bar settings**
-* Select **Activate top bar**
-* Select required information fields and assign their **Sort order**
-
-| Recommended fields                 | Sort order |
-|------------------------------------|------------|
-| Surname                            | 1          |
-| Date of birth                      | 2          |
-| This person is in viral supression | 3          |
-| Viral load latest                  | 4          |
-| Days without medicine              | 5          |
-
-* Click **Save**
-* Return to the **Settings** menu. Click **Saved dashboard layout as default**. Lock layout for all users.
-
-### [CONFIG] metadata
-
-The following metadata needs to be configured after import.
-
-| Metadata Type       | Name                                               |
-|---------------------|----------------------------------------------------|
-| Option Sets         | [CONFIG]\_Race / Ethnicity / Nationality           |
-| Option Sets         | [CONFIG]\_Occupation                               |
-| Option Sets         | [CONFIG]\_Diagnosis                                |
-| Data Elements       | [CONFIG]\_Month before illness, [Other exposure X] |
-| Data Elements       | [CONFIG]\_Laboratory test X                        |
-| Data Elements       | [CONFIG]\_Date of test X                           |
-| Data Elements       | [CONFIG]\_Pathogens tested "X"                     |
-
-Where you can see X in the name, it means there is currently a number to distinguish every different metadata object. For example, for [CONFIG]\_Laboratory test X, you will find in the package Data Elements called [CONFIG]\_Laboratory test 1, [CONFIG]\_Laboratory test 2, [CONFIG]\_Laboratory test 3. It is entirely up to you to rename them as well as adding new ones or removing the ones you may not need following the same logic.
-**Please be aware that this migh have an impact on Program Indicators and Program Rules.**
 
 ## Adapting the tracker program
 
