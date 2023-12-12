@@ -4,13 +4,14 @@
 
 The Case Surveillance component of the DHIS2 Toolkit for HIV is based on the latest WHO [Consolidated guidelines on person-centred HIV strategic information: strengthening routine data for impact](https://www.who.int/publications/i/item/9789240055315) (2022) and the Digital adaptation kit for HIV: operational requirements for implementing WHO recommendations and standards within digital systems, second edition.
 
-This toolkit includes
-- WHO-recommended dashboard analyses and core indicators for monitoring HIV care and treatment initiatives and using key metrics to adjust programming & drive impact 
-- DHIS2 Tracker program aligned with the WHO Digital Adaptation Kit data standards for individual level data collection and operational person-centred monitoring at facility and community levels
-- Aggregate data sets and data elements to model aggregated tracker data for performant, anonymized analytics 
-- Data exchange mapping for aggregating DHIS2 tracker data for Case Surveillance indicators and integration of key indicators with national HMIS
+This toolkit includes:
 
-The HIV toolkit is optimised for improving strategic information systems in countries to facilitate data-driven decision-making, as well as streamlining routine data management processes. The DHIS2 HIV Case Surveillance tracker is not designed to provide clinical decision-support for HIV care and treatment services, but rather serves as an operational tool and a source of individual level data for person-centred monitoring. 
+- DHIS2 HIV Case Surveillance Tracker program aligned with the WHO Digital adaptation kit data standards for individual level data collection and operational person-centred monitoring at facility and community levels
+- WHO-recommended dashboard analyses and core indicators for monitoring HIV care and treatment initiatives and using key metrics to adjust programming & drive impact 
+- Aggregate data sets and data elements to model aggregated tracker data for performant, anonymized analytics 
+- Data exchange mapping for aggregating DHIS2 Tracker data for HIV Case Surveillance indicators and integration of key indicators with national HMIS
+
+The HIV toolkit is optimised for improving strategic information systems in countries to facilitate data-driven decision-making, as well as streamlining routine data management processes. The DHIS2 HIV Case Surveillance Tracker is not designed to provide clinical decision-support for HIV care and treatment services, but rather serves as an operational tool and a source of individual level data for monitoring the HIV response. 
 
 The system design document explains the reference configuration in DHIS2 for the HIV Case Surveillance use case, including a detailed description of DHIS2 Tracker configuration, dashboard design, use of program indicators, mapping of tracker data to the aggregate data model, and data exchange mechanisms. This document also does not consider the resources and infrastructure needed to implement such a system, such as servers, power, internet connections, backups, training and user support, which can be found in the [DHIS2 Tracker Implementation Guide](https://docs.dhis2.org/en/implement/tracker-implementation/target-audience.html).
 
@@ -25,19 +26,19 @@ The HIV Case Surveillance toolkit has been developed in partnership with the WHO
 ### Background
 
 Background
-Efforts to end the HIV epidemic by 2030 face persistent challenges, with 1.5 million new infections in 2020 alone. Key populations and their sexual partners constituted 70% of global new infections in 2021 (UNAIDS, 2022), highlighting barriers to equitable access. Paramount importance is to emphasise routine programmatic data for tracking service delivery, identifying at-risk individuals, and achieving universal access through a person-centred approach. Confidentiality and data privacy is crucial, especially for vulnerable populations that may be stigmatised, necessitating a cautious approach to individual-level data collection and anonymization for data use needs above the service delivery level.. 
+Efforts to end the HIV epidemic by 2030 face persistent challenges, with 1.3 million new infections in 2022 alone. Key populations and their sexual partners constituted 70% of global new infections in 2021 (UNAIDS, 2022), highlighting barriers to equitable access. Paramount importance is to emphasise routine programmatic data for tracking service delivery, identifying individuals at elevated risk for HIV acquisition, and achieving universal access through a person-centred approach. Confidentiality and data privacy is crucial, especially for vulnerable populations that may face stigma and discrimination in many settings, necessitating a cautious approach to individual-level data collection and anonymization for data use needs above the service delivery level.
 
-A person-centred monitoring approach offers distinct advantages for longitudinal HIV data collection that can track and record HIV care and treatment services provided to an individual over time and space (e.g. different service delivery sites and touchpoints with HIV care and treament programmes). Scaling up individual level data collection allows for flexible disaggregation and enhanced analysis by various factors such as time, location, age, gender, clinical status, coinfections, treatment and more. This depth of information enhances our understanding of HIV epidemiology and facilitates ongoing monitoring of trends. Implementation of case-based electronic data is anticipated to enhance data quality by minimising data entry steps, integrating automatic calculations and validations, swiftly correcting or completing inconsistent or incomplete individual records, and facilitating de-duplication.
+A person-centred monitoring approach offers distinct advantages for longitudinal HIV data collection that can track and record HIV care and treatment services provided to an individual over time and space (e.g. different service delivery sites and touchpoints with HIV care and treatment programmes). Scaling up individual level data collection allows for flexible disaggregation and enhanced analysis by various factors such as time, location, age, gender, clinical status, coinfections, treatment and more. This depth of information enhances our understanding of HIV epidemiology and facilitates ongoing monitoring of trends. Implementation of case-based electronic data is anticipated to enhance data quality by minimising data entry steps, integrating automatic calculations and validations, swiftly correcting or completing inconsistent or incomplete individual records, and facilitating de-duplication.
 
 However, in most LMICs, the digitization of individual-level data systems managed by Ministries of Health often takes years to reach scale, and must be matched by substantial in-country resources to sustain the system over time. Furthermore, historical data and other programmatic data are often collected or represented through the aggregate data model – such as denominators based on Spectrum estimates for people living with HIV and aggregated reporting from paper-based service delivery sites with low/no connectivity, limited availability of devices and/or weak infrastructure. 
 
-Therefore, the HIV Case Surveillance toolkit leverages all DHIS2 applications and data models to support practical, implementable approaches to collecting, analysing and using HIV Case Surveillance data effectively to manage and link newly identified HIV cases into treatment programs and ensure a proper monitoring of people living with HIV. These tools can be used in a modular way to meet the needs of any country along the maturity model for digitization of health data – including hybrid implementation of paper-based and digitised systems, as well as incorporating data from other electronic tools like hospital EMRs where these may be used.
+Therefore, the HIV Case Surveillance toolkit leverages all DHIS2 applications and data models to support practical, implementable approaches to collecting, analysing and using HIV Case Surveillance data effectively to manage and link newly identified HIV cases amd those re-engaging in care into treatment programs and to ensure a proper monitoring of people living with HIV. These tools can be used in a modular way to meet the needs of any country along the maturity model for digitization of health data – including hybrid implementation of paper-based and digitised systems, as well as incorporating data from other electronic tools like hospital EMRs where these may be used.
 
 ### Use Case
 
-The HIV Case Surveillance toolkit is designed to support routine data collection for programmes that support people living with HIV to enrol in a HIV program and receive HIV care and treatment services. The system is designed to bring data together to generate granular HIV Case Surveillance indicators and their disaggregations for routine data analysis, person-centred monitoring and strategic information through flexible dashboards and ad-hoc analysis with DHIS2 analytics tools. 
+The HIV Case Surveillance toolkit is designed to support routine data collection for programmes that support people living with HIV to enrol in a HIV program and receive HIV testing, care and treatment services. The system is designed to bring data together to generate granular HIV Case Surveillance indicators and their disaggregations for routine data analysis, person-centred monitoring and strategic information through flexible dashboards and ad-hoc analysis with DHIS2 analytics tools. 
 
-The data capture components of the system design allows for staff at service delivery sites, or higher levels depending on local contexts, to capture the core data elements during routine interactions with HIV  care and treatment programme participants that will allow programme staff to generate key performance indicators as detailed in WHO’s Consolidated guidelines for person-centred HIV strategic information (WHO, 2022). This component uses the DHIS2 Tracker data model. While DHIS2 HIV Case Surveillance tracker program is not optimised to support clinical case management or decision support, it serves as a useful electronic registry that supports decentralised electronic data capture of Case Surveillance data down to health facility or any other point of service from all types of actors. Individual level tracker data are aggregated using DHIS2 program indicators; which are mapped to aggregate data elements and data sets for populating core indicators and serving the analytical dashboards with anonymized data. 
+The data capture components of the system design allows for staff at service delivery sites, or higher levels depending on local contexts, to capture the core data elements during routine interactions with HIV  care and treatment programme participants that will allow programme staff to generate key performance indicators as detailed in WHO’s [Consolidated guidelines for person-centred HIV strategic information (WHO, 2022)](https://www.who.int/publications/i/item/9789240055315). This component uses the DHIS2 Tracker data model. While DHIS2 HIV Case Surveillance tracker program is not optimised to support clinical case management or decision support, it serves as a useful electronic registry that supports decentralised electronic data capture of Case Surveillance data down to health facility or any other point of service from all types of actors, including services delivered at the community level. Individual level tracker data are aggregated using DHIS2 program indicators; which are mapped to aggregate data elements and data sets for populating core indicators and serving the analytical dashboards with anonymized data. 
 
 The DHIS2 tracker program structure has been harmonised and follows the same logic as the HIV prevention Tracker, allowing for a person enrolled in a prevention program to enter the Case Surveillance program with a positive HIV diagnosis. In some contexts, it may be desirable to integrate prevention and Case Surveillance into a single tracker program. Harmonisation of data elements between the two trackers will allow for local adaptation and integration, described further in the ‘Implement’ section of this document. 
 
@@ -54,12 +55,13 @@ The HIV Case Surveillance system design focuses on meeting the needs of end user
 ### Design Structure
 
 The DHIS2 HIV Case Surveillance configuration is structured in three major components:
+
+- **Tracker program**: a DHIS2 tracker program has been configured for individual-level, longitudinal data collection. The tracker program can be used with the DHIS2 web or Android clients.
 - **Dashboards & Indicators**: the HIV Case Surveillance dashboards and indicators are all served by the aggregate data model in DHIS2. Case Surveillance dashboards are shared with the HIV HMIS module. 
-- **Aggregate data sets**: aggregate datasets, data elements and associated category combinations are configured according to the WHO’s HIV analysis framework to populate the core indicators. Three datasets are designed to receive aggregated tracker data (e.g. via program indicators) and model this data in a performant way, leveraging the advantages of the aggregate data model in DHIS2 for analysis. Alternatively, these datasets can also be used for aggregate paper-based reporting; or to store data reported routinely from other individual-level data systems in use, such as sites using EMRs or other mobile applications. 
+- **Aggregate data sets**: aggregate datasets, data elements and associated category combinations are configured according to the WHO’s HIV analysis framework to populate the core indicators. Three datasets are designed to receive aggregated tracker data (e.g. via program indicators) and model this data in a performant way, leveraging the advantages of the aggregate data model in DHIS2 for analysis. Alternatively, these datasets can also be used for aggregate paper-based reporting; or to store data reported routinely from other individual-level data systems in use, such as sites using EMRs or other mobile applications.
   - HIV Case Surveillance (monthly)
   - HIV Case Surveillance (yearly)
   - Population estimates 
-- **Tracker program**: a DHIS2 tracker program has been configured for individual-level, longitudinal data collection. The tracker program can be used with the DHIS2 web or Android clients.
 
 These modular components are designed based on the heterogeneous nature of HIV data systems in countries and support the typical architecture for implementing case-based data systems alongside integrated national HMIS infrastructure: 
 
@@ -76,7 +78,7 @@ The tracker program structure is as follows:
 | **Stage**           | **Description**                                              |
 | ------------------- | ------------------------------------------------------------ |
 | Enrollment          | The enrollment stage collects the basic demographic data about a person, including unique identifiers, as Tracked Entity Attributes (TEAs). Several of these core TEAs such as Family Name and Given name are shared across DHIS2 Tracker programs. The Tracked Entity Type for the HIV Case Surveillance program is ‘Person’. **The stage is non-repeatable.** |
-| Initial case report | The stage can be filled at the same time as the enrollment of the patient.This stage contains the information related to HIV diagnosis and key population groups. **The stage is non-repeatable.** |
+| Initial case report | The stage can be filled at the same time as the enrollment of the patient.This stage contains the information related to HIV diagnosis, probable route of transmission and key population groups. **The stage is non-repeatable.** |
 | Visit               | Main stage that collects all the information necessary for the follow-up of the patient and the program. **The stage is repeatable** |
 |Follow-up | This stage is not tied to any indicators and is purely designed as a tool for recording any contact made with patients who have missed treatment visits and will need to be contacted. **The stage is repeatable**|
 
@@ -95,7 +97,7 @@ The TEA **program UID** attribute refers to an HIV program specific identifier. 
 The **date of birth and age** can be assigned in two different ways:
 
 - Known date of birth: select the Date of birth
-- Unknown date of birth: select the Date of birth - Unknown option and then enter the age either in years or months.
+- Unknown date of birth: select the Date of birth *Unknown* option and then enter the age either in years or months.
 
 Once done, a 'probable' age of birth is assigned to the Date of birth based on the value entered either on the years or month TEA.
 
@@ -111,7 +113,7 @@ The data acquired at this stage pertains to HIV diagnosis related information an
 
 Program rules have been configured to populate the age of HIV diagnosis based on the difference between the age of birth and the date of HIV diagnosis.
 
-Concerning the key population information we recommend implementations to refer to WHO’s 2022 *Consolidated guidelines on person-centred HIV strategic information*, and specifically sections 2.2.2 for guidance on collecting information on key populations for prevention interventions to allow for this disaggregation, further considerations in section 5.1.1, and section 6.4 on maintaining data privacy, security and confidentiality as it relates to key population data captured.
+Concerning the key population information we recommend implementations to refer to WHO’s 2022 [Consolidated guidelines on person-centred HIV strategic information](https://www.who.int/publications/i/item/9789240055315), and specifically sections 2.2.2 for guidance on collecting information on key populations for prevention interventions to allow for this disaggregation, further considerations in section 5.1.1, and section 6.4 on maintaining data privacy, security and confidentiality as it relates to key population data captured.
 
 ![Initial case report](resources/images/initial_case_report.png)
 
@@ -135,18 +137,20 @@ In addition to the visit date, additional key dates have been configured as Trac
 
 #### Visit details
 
-The initial Visit Details section allows the user to report the patient status at the visit and as well select which HIV care and treatment services will be recorded for this visit report. 
+The initial Visit Details section allows the user to report the patient status at the visit and as well select which HIV testing, care and treatment services will be recorded for this visit report. 
 
-The patient status is a key information that needs to be reported at every visit and it’s used in most of the indicators present in the program.
+The patient's HIV status is key information that needs to be reported at every visit and is used in most of the indicators present in the program.
 The set of options assigned is:
+
 - PLHIV: the client is alive and is part of the cohort
 - Death (documented): the client is dead
 - Lost to follow up: the client is lost to follow up
+  
 In case ‘death’ or ‘follow up’ is selected, the relatives date of dead and declaration of lost to follow-up are requested
 
 >**Note:**
 >
->The recommended threshold for designation of people living with HIV on ART as lost to followup is 28 days after the last missed appointment or last ARV refill, to account for DSD ART. See chapter 3 of WHO's 'Consolidated guidelines on person-centred HIV strategic information' for additional information.
+>The recommended threshold for designation of people living with HIV on ART as lost to followup is >28 days after the last missed appointment or last ARV refill, to account for differentiated service delivery (DSD) for ART. See chapter 3 of WHO's 'Consolidated guidelines on person-centred HIV strategic information' for additional information.
 
 A series of program rules will show/hide the desired sections depending on which type of HIV care details will be recorded. It is generally assumed that the user will create a new Event in the Visit stage for each time they interact with a service provider, regardless of how many HIV care services they access during the visit. 
 
@@ -163,6 +167,7 @@ The ‘Currently pregnant’, ‘Cervical cancer’ and ‘Vertical transmission
 The treatment section is always shown and doesn’t need to be selected from the ‘Visit details’ section as ART treatment is the central pillar on the management of PLHIV.
 
 The main and mandatory information to be reported is the treatments status in which, according to the current status of the patient at the visit, a set of options has been assigned:
+
 - **Initiation (new)**: PLHIV starting ART for the first time in their life
 - **Initiation (after stopping)**: PLHIV restarting the ART after a period of interruption.
 - **On ART**: PLHIV already on ART at the moment of the visit
@@ -182,6 +187,7 @@ DSD ART models information need to be customised prior implementation according 
 Within the HIV/TB section information related to TB screening, testing, treatment of active TB disease and TB preventive treatment are requested.
 
 A serie of program rules are being setted to:
+
 - Hide all the information related to ‘TB screening, test and TB preventive treatment’ related information in case the PLHIV has TB disease
 - Report the date of ‘TB diagnosis’ in the following visits (DHIS2 event) in case has been reported and still with the disease
 - Report the date of ‘TB treatment start date’ in the following visits (DHIS2 event) in case has been reported and still on treatment
@@ -192,6 +198,7 @@ A serie of program rules are being setted to:
 #### Vertical transmission
 
 The information collected for the vertical transmission have been classified in the two (2) different (sub)section according to the timing of when data collection should occur:
+
 - Information at birth
 - Follow-up visit
 
@@ -243,6 +250,7 @@ All data elements configured for the Tracker domain are also included in the Dat
 #### Cloned data elements for multiple option selection
 
 Within the program stages for  ‘Initial Case report’ and ‘Visits’, there are a number of data elements that are cloned to allow the selection of multiple options for a given concept, sharing the same option set. This design is implemented as follows:
+
 - Cloning of data elements eligible for multi-option choice
   - The number of clone of the data element must be the same as the number of options present in the related option set
   - Each cloned data element has its own UID, name and code
@@ -251,6 +259,7 @@ Within the program stages for  ‘Initial Case report’ and ‘Visits’, there
   - Show error in case the same Option has been selected more than once in the same group of Data Elements
 
 For example, to capture multiple probable route of transmission, there are a series of data elements that are cloned to represent each discrete diagnosis: 
+
 - HIV - Probable route of transmission - 1 [ODG7SJQHCBv]
 - HIV - Probable route of transmission - 2 [jsXCQZT5f9c]
 - HIV - Probable route of transmission - 3 [HxPpUO6SuXD]
@@ -461,10 +470,12 @@ Note that in adjusting program indicators that filter based on Key Population gr
 
 Some program indicators are required to count the number of PLHIV currently on treatment either at the current date and/or for a specific reporting period.
 To be able to allow this type of calculation we need to work on two different part of the program indicators formula:
+
 - Period boundaries
 - Filter
 
 On the period boundaries section we need to use a combination of two different CUSTOM date as we want to count all the PLHIV from the moment in which they start the ART up to the last day with treatment. Therefore the date to use are:
+
 - Before end of reporting period: Date of treatment initiation [Lv3c5VSA9t3]
 - After the start of reporting period: Last day with ART [EGjmPoKhHpM]
 
@@ -480,8 +491,10 @@ Hereunder a snapshot of the filter:
 To be able to calculate this program indicator of type ENROLLMENT we need to use a CUSTOM period boundaries based on the ‘Date of HIV positive diagnosis’ as we want to count all the clients since the date of the diagnosis until either the current date, in case their still alive and in the cohort or the date of death / lost to follow-up.
 To enable this counting the data element ‘HIV - Cohort date’ [ CrFaWOLSKiK] has been created and get assigned the value of the the current date in case the client is still alive / in the cohort (PLHIV) and the date of the death / lost to follow-up in case the client has dead or has been lost to follow-up.
 On this way the program indicator ‘HIV CS - HTS.1 People living with HIV who know their HIV status’ [HY5WGeOQPmC] has assigned the following period boundaries:
+
 - Before end of reporting period: Date of HIV positive diagnosis
 - After start of reporting period: Cohort date
+
 The program indicator is of type ENROLLMENT as we want to know the information collected on the last visit (DHIS2 event)
 
 **ART.8 Appropriate second viral load test after adherence counselling**
@@ -510,6 +523,7 @@ Moreover another data element reporting the date of the first TB test (if is a m
 The reporting period of the indicator has been set-up as the “last 12 months” therefore the output will be the proportion of clients diagnosed with a particular STI syndrome two or more times within the last 12 months.
 
 In the numerator we need to calculate the number of people attending HIV prevention services diagnosed with a particular STI syndrome two or more times. This filter relies on the hidden data elements assigned with values for ‘last diagnosis date’:
+
 - HIV - STI: Urethral discharge syndrome last diagnosis date [DI8O2sFAjIZ]
 - HIV - STI: Vaginal discharge syndrome last diagnosis date [PMYnHPcLOrg]
 - HIV - STI: Lower abdominal pain last diagnosis date [fGg6Qx8AzDw]
@@ -565,20 +579,23 @@ Where safety and the potential to discourage access to services are a concern, t
 ### Tracker structure adaptation
 
 The HIV Case Surveillance tracker structure is mostly a flat structure with only one main repeatable stage to record activities for any type of prevention visit. This intentionally simplified structure allows for increased flexibility for local adaptation and customization. For example: 
+
 - Sections can be easily translated in stages in case different user have to entered different information (as detailed previously the HIV Case Surveillance service are very transversal and can have several actors involved on the distribution of the services)
 - Reduced amount of program rules and well identified by the section targeted
 - If a specific activity (HIV care intervention, such as cervical cancer) is not relevant to your country’s package of HIV care and treatment services offered, you can simply remove an entire section without repercussions on the rest of the data model. 
 
 #### Integration of HIV Case Surveillance and HIV Prevention tracker
 
-Depending on local context, some implementations may wish to integrate prevention and case surveillance into a single DHIS2 Tracker Program. An integrated tracker design option was considered for the global design guide, but ultimately discarded in favor of two Tracker programs for the following reasons:
-- Scale: the number of persons (TEIs) enrolled in a prevention program is likely to be much, much greater than the number of persons (TEIs) diagnosed as positive and enrolled in a Case Surveillance program. This may have an impact on performance and also requires adequate server infrastructure for large-scale Tracker deployment.
+Depending on local context, some implementations may wish to integrate HIV Prevention and Case Surveillance into a single DHIS2 Tracker Program. An integrated tracker design option was considered for the global design guide, but ultimately discarded in favor of two Tracker programs for the following reasons:
+
+- Scale: the number of persons (TEIs) enrolled in a prevention program is likely to be much, much greater than the number of persons (TEIs) diagnosed as positive and enrolled in a HIV Case Surveillance program. This may have an impact on performance and also requires adequate server infrastructure for large-scale Tracker deployment.
 - Types of service providers: in many country contexts, a large scale and variety of service providers may be engaged in HIV prevention services, such as community health workers, NGOs/CSOs as implementing partners, etc. Often these prevention service providers are not responsible for following up the HIV case through lifelong treatment and should not have access to the client’s health data after being identified as an HIV positive client. Therefore, separating the Tracker programs suits the variety and helps to ensure protection & data confidentiality of people living with HIV. 
 - Indicators included in the WHO SI guidelines and DAK do not necessitate ‘cross-program’ analysis; all indicators can be generated within DHIS2 using two separate programs.
 - A typical workflow from prevention services to HIV case surveillance is well supported by closing the enrollment in a DHIS2 prevention tracker program and opening a new enrollment in the case surveillance program. The person (TEI) is linked to both Prevention and Case Surveillance programs in case ad hoc analysis will be required for advanced programmatic data analysis conducted outside of DHIS2. 
 
 An integrated design can be implemented leveraging many of the existing DHIS2 metadata, such as the Tracker data element library. Both Tracker programs follow a similar structure with initial case report and integrated, repeatable ‘visit’ stage for all follow-up thereafter. 
 Tracker metadata that are common between the HIV prevention and HIV case surveillance trackers are shared between the two programs (using the same UIDs) as follows:
+
 - All Tracked Entity Attributes: all the TEAs are the same
 - Initial case report: the Data Elements related to the Key population identification are the same
 - Visit stage:
