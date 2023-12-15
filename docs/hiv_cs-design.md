@@ -369,7 +369,7 @@ The indicator needs to count the number of PLHIV that, after being screened posi
 
 **TBH.3 TB diagnostic testing type**
 
-In the numerator we need to count only the PLHIV that has received as first TB test a WHO approved rapid molecular TB test.
+In the numerator we need to count only PLHIV that have received as first TB test a WHO approved rapid molecular TB test.
 A data element reporting TRUE in case the first test has been with a mWRD (Molecular WHO Recommended rapid diagnostic) test is created and reported over the following events.
 
 | Metadata     | UID         | Name                                                                                 |
@@ -600,7 +600,9 @@ Tracker metadata that are common between the HIV prevention and HIV case surveil
 - Initial case report: the Data Elements related to the Key population identification are the same
 - Visit stage:
   - STI data elements are the same
-  - Viral hepatitis: Data Elements related to the testing, date and result are the same 
+  - Viral hepatitis: Data Elements related to the testing, date and result are the same
+ 
+Implementers need to be mindful of privacy and confidentiality concerns related to patient data being linked from a Prevention tracker to a Case Surveillance Tracker.  Some data elements that carry sensitive patient information, such as a patient's key population status, may need to be removed if a patient record is linked.  Furthermore, linking between Prevention and Case Surveillance Trackers would not be advised if privacy, security and patient confidentiality could not be ensured (see Chapter 2: Prevention and Chapter 6: Digital health data of WHO's 2022 'Consolidated guidelines on person-centred HIV strategic information' for further details).
 
 ![Structure for an integrated Prevention/Case Surveillance Tracker Program](/resources/images/integrated_prev_cs_structure.jpg)
 
@@ -608,7 +610,7 @@ Tracker metadata that are common between the HIV prevention and HIV case surveil
 
 #### Ownership Analytics
 
-From DHIS2 v40, new functionality is available that allows for program indicator calculations to be made based on the ‘ownership’ org unit of a given enrollment. For example, you can count the number of unique clients that are receiving HIV prevention services at a facility even if they were not originally enrolled in care at that facility or officially transferred.
+From DHIS2 v40, new functionality is available that allows for program indicator calculations to be made based on the ‘ownership’ org unit of a given enrollment. For example, you can count the number of unique clients that are receiving HIV care and treatment services at a facility even if they were not originally enrolled in care at that facility or officially transferred.
 
 Program indicators can define which **organisation unit dimension** to be used in analytics. Choices include the organisation unit for the event, enrollment, registration, organisation unit data element and tracked entity instance ownership at the start or end of the reporting period. Ownership analytics apply only to program indicators configured *based on enrollment*.
 
