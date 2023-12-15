@@ -220,7 +220,7 @@ In the Sexually Transmitted Infections (STI) section, information related to the
 
 In the Viral hepatitis section, information related to HBsAG and HCV infection, tests performed and results and treatment are collected among clients enrolled in the HIV Case Surveillance program. 
 
-In case the PLHIV is infected with HBV and/or HCV, all the information related to the test are going to be hidden through a serie of program rules
+In case a person living with HIV is infected with HBV and/or HCV, all the information related to the test are going to be hidden through a serie of program rules
 
 ![Viral Hepatitis](resources/images/viral_hepatitis.png)
 
@@ -228,7 +228,7 @@ In case the PLHIV is infected with HBV and/or HCV, all the information related t
 
 Within the cervical cancer section, information related to the number of HPV vaccination doses received, cervical cancer diagnosis and cervical cancer screening with relative outcome and treatment status are requested.
 
-In case the WLHIV has been diagnosed with invasive cervical cancer, all the information related to the screening are hidden
+In case a woman living with HIV has been diagnosed with invasive cervical cancer, the information related to screening is hidden.
 
 ![Cervical cancer](resources/images/cervical_cancer.png)
 
@@ -258,7 +258,7 @@ Within the program stages for  ‘Initial Case report’ and ‘Visits’, there
   - Hide the consequent Data Elements if the previous have not been selected
   - Show error in case the same Option has been selected more than once in the same group of Data Elements
 
-For example, to capture multiple probable route of transmission, there are a series of data elements that are cloned to represent each discrete diagnosis: 
+For example, to capture multiple probable route of transmission, there are a series of data elements that are cloned to represent each discrete category of route of transmission: 
 
 - HIV - Probable route of transmission - 1 [ODG7SJQHCBv]
 - HIV - Probable route of transmission - 2 [jsXCQZT5f9c]
@@ -287,26 +287,26 @@ These Data Elements are identified with the postfix “- VISIT”
 | Data Element | kICLXq7IEuP | HIV - Key population - Sex worker - VISITS                                         |
 | Data Element | vZQyUQCKSc6 | HIV - Key population - Trans and gender-diverse people - VISITS                    |
 | Data Element | kXutCUTOxcq | HIV - Key population - Men who have sex with men - VISITS                          |
-| Data Element | GSSOfwzb0DQ | HIV - Key population - Person who inject drugs - VISITS                            |
+| Data Element | GSSOfwzb0DQ | HIV - Key population - Person who injects drugs - VISITS                            |
 | Data Element | iqXxZbRDhYG | HIV - Key population - People living in prisons and other closed settings - VISITS |
 | Data Element | kICLXq7IEuP | HIV - Key population - Sex worker - VISITS                                         |
 | Data Element | vZQyUQCKSc6 | HIV - Key population - Trans and gender-diverse people - VISITS                    |
 | Program rule | Bj2Z3glSvHy | HIV - Assign value to Date of HIV positive diagnosis                               |
 | Program rule | FNCVV9kG0oi | HIV - Assign value to Age when diagnosed with HIV                                  |
 | Program rule | iLq9wgcYwAE | HIV - Assign value TRUE - Men who have sex with men                                |
-| Program rule | yYGoGwZ612X | HIV - Assign value TRUE - Person who inject drugss                                 |
+| Program rule | yYGoGwZ612X | HIV - Assign value TRUE - Person who inject drugs                                 |
 | Program rule | X51QRO65q4p | HIV - Assign value TRUE - people in prison or other closed settings                |
 | Program rule | T3EGb8JMpRs | HIV - Assign value TRUE - Sex worker                                               |
 | Program rule | zFTfjVAEY42 | HIV - Assign value TRUE - Trans and gender-diverse people                          |
 | Program rule | mjrCXVhuYhe | HIV - Assign value FALSE - Men who have sex with men                               |
-| Program rule | HxtlnaW2LHW | HIV - Assign value FALSE - Person who inject drugss                                |
+| Program rule | HxtlnaW2LHW | HIV - Assign value FALSE - Person who inject drugs                                |
 | Program rule | TBzZvKdia6D | HIV - Assign value FALSE - people in prison or other closed settings               |
 | Program rule | gs5hHXi3Q62 | HIV - Assign value FALSE - Sex worker                                              |
 | Program rule | X4GW8qfrm0j | HIV - Assign value FALSE - Trans and gender-diverse people                         |
 
 **HTS.1 People living with HIV who know their HIV status**
 
-To be able to calculate this program indicator we need to use a CUSTOM period boundaries based on the ‘Date of HIV positive diagnosis’ as we want to count all the clients since the date of the diagnosis until either the current date, in case their still alive and in the cohort or the date of death / lost to follow-up.
+To be able to calculate this program indicator we need to use a CUSTOM period boundaries based on the ‘Date of HIV positive diagnosis’ as we want to count all the clients since the date of the diagnosis until either the current date, in case their still alive, and in the cohort or the date of death / lost to follow-up.
 To enable this counting the data element ‘HIV - Cohort date’ [ CrFaWOLSKiK] has been created and get assigned the value of the the current date in case the client is still alive / in the cohort (PLHIV) and the date of the death / lost to follow-up in case the client has dead or has been lost to follow-up.
 
 | Metadata     | UID         | Name                                                       |
@@ -359,7 +359,7 @@ In both numerator and denominator of this indicator we need to count the PLHIV t
 
 **DFT.3 TB testing among those symptom-screened positive**
 
-The indicator need to count the number of PLHIV that, after being screened positive for TB, are tested for TB. We therefore need the date in which the last TB screening has been performed and we need to ensure that the screening has happened before the testing
+The indicator needs to count the number of PLHIV that, after being screened positive for TB, are tested for TB. We therefore need the date in which the last TB screening has been performed and we need to ensure that the screening has happened before the testing
 
 | Metadata     | UID         | Name                                                           |
 |--------------|-------------|----------------------------------------------------------------|
@@ -369,7 +369,7 @@ The indicator need to count the number of PLHIV that, after being screened posit
 
 **TBH.3 TB diagnostic testing type**
 
-In the numerator we need to count only the PLHIV that has received as first TB test a WHO approved rapid molecular TB test.
+In the numerator we need to count only PLHIV that have received as first TB test a WHO approved rapid molecular TB test.
 A data element reporting TRUE in case the first test has been with a mWRD (Molecular WHO Recommended rapid diagnostic) test is created and reported over the following events.
 
 | Metadata     | UID         | Name                                                                                 |
@@ -600,7 +600,9 @@ Tracker metadata that are common between the HIV prevention and HIV case surveil
 - Initial case report: the Data Elements related to the Key population identification are the same
 - Visit stage:
   - STI data elements are the same
-  - Viral hepatitis: Data Elements related to the testing, date and result are the same 
+  - Viral hepatitis: Data Elements related to the testing, date and result are the same
+ 
+Implementers need to be mindful of privacy and confidentiality concerns related to patient data being linked from a Prevention tracker to a Case Surveillance Tracker.  Some data elements that carry sensitive patient information, such as a patient's key population status, may need to be removed if a patient record is linked.  Furthermore, linking between Prevention and Case Surveillance Trackers would not be advised if privacy, security and patient confidentiality could not be ensured (see Chapter 2: Prevention and Chapter 6: Digital health data of WHO's 2022 'Consolidated guidelines on person-centred HIV strategic information' for further details).
 
 ![Structure for an integrated Prevention/Case Surveillance Tracker Program](/resources/images/integrated_prev_cs_structure.jpg)
 
@@ -608,7 +610,7 @@ Tracker metadata that are common between the HIV prevention and HIV case surveil
 
 #### Ownership Analytics
 
-From DHIS2 v40, new functionality is available that allows for program indicator calculations to be made based on the ‘ownership’ org unit of a given enrollment. For example, you can count the number of unique clients that are receiving HIV prevention services at a facility even if they were not originally enrolled in care at that facility or officially transferred.
+From DHIS2 v40, new functionality is available that allows for program indicator calculations to be made based on the ‘ownership’ org unit of a given enrollment. For example, you can count the number of unique clients that are receiving HIV care and treatment services at a facility even if they were not originally enrolled in care at that facility or officially transferred.
 
 Program indicators can define which **organisation unit dimension** to be used in analytics. Choices include the organisation unit for the event, enrollment, registration, organisation unit data element and tracked entity instance ownership at the start or end of the reporting period. Ownership analytics apply only to program indicators configured *based on enrollment*.
 
