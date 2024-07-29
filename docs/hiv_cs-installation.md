@@ -130,9 +130,9 @@ First, you will have to use the _Sharing_ functionality of DHIS2 to configure wh
 
 A metadata package usually contains several user groups:
 
-* HIV PREV - Access
-* HIV PREV - Admin
-* HIV PREV - Data capture
+* HIV CS - Access
+* HIV CS - Admin
+* HIV CS - Data capture
 
 By default, the following is assigned to these user groups
 
@@ -158,6 +158,10 @@ Refer to the [DHIS2 Documentation](http://dhis2.org/documentation) for more info
 ### Organisation Units
 
 You must assign the program to organisation units within your own hierarchy in order to be able to see the program in tracker capture.
+
+### Visualizations using Organisation Unit Group
+
+There are visualizations, event reports, report tables and maps that have a reference to a specific organisation unit group called 'HMIS: All Health Facilities' with the UID 'zk3lBJfnL6b'. You must assign the organisation units that are health facilities within your own hierarchy into it in order to be able to see the correct visualizations.
 
 ### Duplicated metadata
 
