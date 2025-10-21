@@ -1,5 +1,9 @@
 # Release Note { #hiv-cs-release-note }
 
+## 2.0.2
+
+DHIS2 2.41 version compatibility with improvements in the use of multioption selection and relative optimisation of program rules and program indicators
+
 ## 2.0.1
 
 A new version of the HIV Case Surveillance module (v2.0.1) has been released with some minor changes.
